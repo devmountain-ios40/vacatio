@@ -51,7 +51,7 @@ $ source ~/.zprofile
 ```
 
 Change into this project's root directory and install the version of Python tracked in
-[`.python-version`](../.python-version) by running the following command:
+[`.python-version`](../../../.python-version) by running the following command:
 
 ```bash
 $ cat .python-version | pyenv install
@@ -72,7 +72,7 @@ Homebrew:
 $ brew install poetry
 ```
 
-Poetry uses the [`pyproject.toml`](../pyproject.toml) and [`poetry.lock`](../poetry.lock)
+Poetry uses the [`pyproject.toml`](../../../pyproject.toml) and [`poetry.lock`](../../../poetry.lock)
 files to track dependencies. Install the project dependencies, like so:
 
 ```bash
@@ -94,4 +94,4 @@ Or you can run commands ad-hoc style by prepending them with `poetry run`, as fo
 $ poetry run grip ops/dev/mac-dev-environment.md
 ```
 
-Now return to the original [README](./README.md) for more instructions.
+Now return to the original [README](../../../README.md) for more instructions.
