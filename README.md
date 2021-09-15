@@ -1,7 +1,8 @@
-# House Hunt (name _tbd_)
+# Vacatio
 
-Tool for individuals or families to organize their house hunt, tracking houses they've
-considered, comparing them, and helping to make decisions.
+Your mobile vacation planner.
+
+_Collaborate with your friends and family to plan your next vacation._
 
 # Development Environment Setup
 

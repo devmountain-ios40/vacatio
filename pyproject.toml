@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "house-hunt.git"
+name = "vacatio.git"
 version = "0.1.0"
-description = "Tracks Python dependencies for a housing hunt iOS application (name tbd)."
+description = "Tracks Python dependencies for Vacatio."
 authors = ["Stephen A. Davis <stephen@webdavis.io>"]
 license = "MIT"
 
