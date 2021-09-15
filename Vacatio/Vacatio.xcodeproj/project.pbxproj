@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC5B01FA26F25E24009F8199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B01F926F25E24009F8199 /* AppDelegate.swift */; };
+		DC5B01FC26F25E24009F8199 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B01FB26F25E24009F8199 /* SceneDelegate.swift */; };
+		DC5B01FE26F25E24009F8199 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B01FD26F25E24009F8199 /* ViewController.swift */; };
+		DC5B020126F25E24009F8199 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5B01FF26F25E24009F8199 /* Main.storyboard */; };
+		DC5B020326F25E25009F8199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5B020226F25E25009F8199 /* Assets.xcassets */; };
+		DC5B020626F25E25009F8199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5B020426F25E25009F8199 /* LaunchScreen.storyboard */; };
+		DC5B021126F25E25009F8199 /* VacatioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B021026F25E25009F8199 /* VacatioTests.swift */; };
+		DC5B021C26F25E25009F8199 /* VacatioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B021B26F25E25009F8199 /* VacatioUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC5B020D26F25E25009F8199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC5B01EE26F25E24009F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC5B01F526F25E24009F8199;
+			remoteInfo = Vacatio;
+		};
+		DC5B021826F25E25009F8199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC5B01EE26F25E24009F8199 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC5B01F526F25E24009F8199;
+			remoteInfo = Vacatio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC5B01F626F25E24009F8199 /* Vacatio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vacatio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5B01F926F25E24009F8199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC5B01FB26F25E24009F8199 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC5B01FD26F25E24009F8199 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC5B020026F25E24009F8199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC5B020226F25E25009F8199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC5B020526F25E25009F8199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC5B020726F25E25009F8199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5B020C26F25E25009F8199 /* VacatioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacatioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5B021026F25E25009F8199 /* VacatioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacatioTests.swift; sourceTree = "<group>"; };
+		DC5B021226F25E25009F8199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5B021726F25E25009F8199 /* VacatioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacatioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5B021B26F25E25009F8199 /* VacatioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacatioUITests.swift; sourceTree = "<group>"; };
+		DC5B021D26F25E25009F8199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC5B01F326F25E24009F8199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5B020926F25E25009F8199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5B021426F25E25009F8199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC5B01ED26F25E24009F8199 = {
+			isa = PBXGroup;
+			children = (
+				DC5B01F826F25E24009F8199 /* Vacatio */,
+				DC5B020F26F25E25009F8199 /* VacatioTests */,
+				DC5B021A26F25E25009F8199 /* VacatioUITests */,
+				DC5B01F726F25E24009F8199 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5B01F726F25E24009F8199 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B01F626F25E24009F8199 /* Vacatio.app */,
+				DC5B020C26F25E25009F8199 /* VacatioTests.xctest */,
+				DC5B021726F25E25009F8199 /* VacatioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5B01F826F25E24009F8199 /* Vacatio */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B022C26F25E3D009F8199 /* Views */,
+				DC5B022A26F25E2D009F8199 /* Controllers */,
+				DC5B022926F25E28009F8199 /* Resources */,
+			);
+			path = Vacatio;
+			sourceTree = "<group>";
+		};
+		DC5B020F26F25E25009F8199 /* VacatioTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B021026F25E25009F8199 /* VacatioTests.swift */,
+				DC5B021226F25E25009F8199 /* Info.plist */,
+			);
+			path = VacatioTests;
+			sourceTree = "<group>";
+		};
+		DC5B021A26F25E25009F8199 /* VacatioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B021B26F25E25009F8199 /* VacatioUITests.swift */,
+				DC5B021D26F25E25009F8199 /* Info.plist */,
+			);
+			path = VacatioUITests;
+			sourceTree = "<group>";
+		};
+		DC5B022926F25E28009F8199 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B020726F25E25009F8199 /* Info.plist */,
+				DC5B01F926F25E24009F8199 /* AppDelegate.swift */,
+				DC5B01FB26F25E24009F8199 /* SceneDelegate.swift */,
+				DC5B020226F25E25009F8199 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC5B022A26F25E2D009F8199 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B022B26F25E37009F8199 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DC5B022B26F25E37009F8199 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B01FD26F25E24009F8199 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DC5B022C26F25E3D009F8199 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B022D26F25E41009F8199 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC5B022D26F25E41009F8199 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B01FF26F25E24009F8199 /* Main.storyboard */,
+				DC5B020426F25E25009F8199 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC5B01F526F25E24009F8199 /* Vacatio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5B022026F25E25009F8199 /* Build configuration list for PBXNativeTarget "Vacatio" */;
+			buildPhases = (
+				DC5B01F226F25E24009F8199 /* Sources */,
+				DC5B01F326F25E24009F8199 /* Frameworks */,
+				DC5B01F426F25E24009F8199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vacatio;
+			productName = Vacatio;
+			productReference = DC5B01F626F25E24009F8199 /* Vacatio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC5B020B26F25E25009F8199 /* VacatioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5B022326F25E25009F8199 /* Build configuration list for PBXNativeTarget "VacatioTests" */;
+			buildPhases = (
+				DC5B020826F25E25009F8199 /* Sources */,
+				DC5B020926F25E25009F8199 /* Frameworks */,
+				DC5B020A26F25E25009F8199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC5B020E26F25E25009F8199 /* PBXTargetDependency */,
+			);
+			name = VacatioTests;
+			productName = VacatioTests;
+			productReference = DC5B020C26F25E25009F8199 /* VacatioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC5B021626F25E25009F8199 /* VacatioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5B022626F25E25009F8199 /* Build configuration list for PBXNativeTarget "VacatioUITests" */;
+			buildPhases = (
+				DC5B021326F25E25009F8199 /* Sources */,
+				DC5B021426F25E25009F8199 /* Frameworks */,
+				DC5B021526F25E25009F8199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC5B021926F25E25009F8199 /* PBXTargetDependency */,
+			);
+			name = VacatioUITests;
+			productName = VacatioUITests;
+			productReference = DC5B021726F25E25009F8199 /* VacatioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC5B01EE26F25E24009F8199 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DC5B01F526F25E24009F8199 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					DC5B020B26F25E25009F8199 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DC5B01F526F25E24009F8199;
+					};
+					DC5B021626F25E25009F8199 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = DC5B01F526F25E24009F8199;
+					};
+				};
+			};
+			buildConfigurationList = DC5B01F126F25E24009F8199 /* Build configuration list for PBXProject "Vacatio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC5B01ED26F25E24009F8199;
+			productRefGroup = DC5B01F726F25E24009F8199 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC5B01F526F25E24009F8199 /* Vacatio */,
+				DC5B020B26F25E25009F8199 /* VacatioTests */,
+				DC5B021626F25E25009F8199 /* VacatioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC5B01F426F25E24009F8199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5B020626F25E25009F8199 /* LaunchScreen.storyboard in Resources */,
+				DC5B020326F25E25009F8199 /* Assets.xcassets in Resources */,
+				DC5B020126F25E24009F8199 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5B020A26F25E25009F8199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5B021526F25E25009F8199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC5B01F226F25E24009F8199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5B01FE26F25E24009F8199 /* ViewController.swift in Sources */,
+				DC5B01FA26F25E24009F8199 /* AppDelegate.swift in Sources */,
+				DC5B01FC26F25E24009F8199 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5B020826F25E25009F8199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5B021126F25E25009F8199 /* VacatioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5B021326F25E25009F8199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5B021C26F25E25009F8199 /* VacatioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC5B020E26F25E25009F8199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC5B01F526F25E24009F8199 /* Vacatio */;
+			targetProxy = DC5B020D26F25E25009F8199 /* PBXContainerItemProxy */;
+		};
+		DC5B021926F25E25009F8199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC5B01F526F25E24009F8199 /* Vacatio */;
+			targetProxy = DC5B021826F25E25009F8199 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC5B01FF26F25E24009F8199 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5B020026F25E24009F8199 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC5B020426F25E25009F8199 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5B020526F25E25009F8199 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC5B021E26F25E25009F8199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC5B021F26F25E25009F8199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC5B022126F25E25009F8199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = Vacatio/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC5B022226F25E25009F8199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = Vacatio/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC5B022426F25E25009F8199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacatio.app/Vacatio";
+			};
+			name = Debug;
+		};
+		DC5B022526F25E25009F8199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacatio.app/Vacatio";
+			};
+			name = Release;
+		};
+		DC5B022726F25E25009F8199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vacatio;
+			};
+			name = Debug;
+		};
+		DC5B022826F25E25009F8199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vacatio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC5B01F126F25E24009F8199 /* Build configuration list for PBXProject "Vacatio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5B021E26F25E25009F8199 /* Debug */,
+				DC5B021F26F25E25009F8199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5B022026F25E25009F8199 /* Build configuration list for PBXNativeTarget "Vacatio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5B022126F25E25009F8199 /* Debug */,
+				DC5B022226F25E25009F8199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5B022326F25E25009F8199 /* Build configuration list for PBXNativeTarget "VacatioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5B022426F25E25009F8199 /* Debug */,
+				DC5B022526F25E25009F8199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5B022626F25E25009F8199 /* Build configuration list for PBXNativeTarget "VacatioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5B022726F25E25009F8199 /* Debug */,
+				DC5B022826F25E25009F8199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC5B01EE26F25E24009F8199 /* Project object */;
+}
