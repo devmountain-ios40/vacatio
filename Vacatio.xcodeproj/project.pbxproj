@@ -49,6 +49,10 @@
 		DC5B021726F25E25009F8199 /* VacatioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacatioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5B021B26F25E25009F8199 /* VacatioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacatioUITests.swift; sourceTree = "<group>"; };
 		DC5B021D26F25E25009F8199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC75A63C26F8DB2C004207D5 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		DC75A63D26F8DB9D004207D5 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		DC75A63E26F8DBA8004207D5 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		DC75A63F26F8DBAF004207D5 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		DC5B01F826F25E24009F8199 /* Vacatio */ = {
 			isa = PBXGroup;
 			children = (
+				DC75A63B26F894A3004207D5 /* Configs */,
 				DC5B022C26F25E3D009F8199 /* Views */,
 				DC5B022A26F25E2D009F8199 /* Controllers */,
 				DC5B022926F25E28009F8199 /* Resources */,
@@ -127,7 +132,6 @@
 		DC5B022926F25E28009F8199 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DC5B020726F25E25009F8199 /* Info.plist */,
 				DC5B01F926F25E24009F8199 /* AppDelegate.swift */,
 				DC5B01FB26F25E24009F8199 /* SceneDelegate.swift */,
 				DC5B020226F25E25009F8199 /* Assets.xcassets */,
@@ -166,6 +170,18 @@
 				DC5B020426F25E25009F8199 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DC75A63B26F894A3004207D5 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B020726F25E25009F8199 /* Info.plist */,
+				DC75A63C26F8DB2C004207D5 /* Base.xcconfig */,
+				DC75A63D26F8DB9D004207D5 /* Debug.xcconfig */,
+				DC75A63E26F8DBA8004207D5 /* Staging.xcconfig */,
+				DC75A63F26F8DBAF004207D5 /* Release.xcconfig */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,7 +494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KPL4DJ569T;
-				INFOPLIST_FILE = Vacatio/Resources/Info.plist;
+				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KPL4DJ569T;
-				INFOPLIST_FILE = Vacatio/Resources/Info.plist;
+				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
