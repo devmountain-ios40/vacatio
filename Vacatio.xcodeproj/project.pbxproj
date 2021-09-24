@@ -8,18 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3DF69C244518CE40CA63ABB0 /* Pods_Vacatio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B77AE11E7043E4D50370282 /* Pods_Vacatio.framework */; };
-		49D084F526FD9EBD00751C35 /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D084F426FD9EBD00751C35 /* GoogleService-Info-Staging.plist */; };
-		49D084F626FD9EBD00751C35 /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D084F426FD9EBD00751C35 /* GoogleService-Info-Staging.plist */; };
-		49D084F726FD9EBD00751C35 /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D084F426FD9EBD00751C35 /* GoogleService-Info-Staging.plist */; };
-		49D084F926FD9EE100751C35 /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D084F826FD9EE100751C35 /* GoogleService-Info-Staging.plist */; };
-		49D084FA26FD9EE100751C35 /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D084F826FD9EE100751C35 /* GoogleService-Info-Staging.plist */; };
-		49D084FB26FD9EE100751C35 /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D084F826FD9EE100751C35 /* GoogleService-Info-Staging.plist */; };
 		49D084FD26FE268C00751C35 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D084FC26FE268C00751C35 /* Login.storyboard */; };
 		49D0850126FE304C00751C35 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0850026FE304C00751C35 /* AccountViewController.swift */; };
 		49D0850526FE326D00751C35 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D0850426FE326D00751C35 /* Account.storyboard */; };
 		49D0850826FE328A00751C35 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D0850726FE328A00751C35 /* Explore.storyboard */; };
 		49D0850B26FE333000751C35 /* Trips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D0850A26FE333000751C35 /* Trips.storyboard */; };
 		57D76FD4E494E9927936EB05 /* Pods_VacatioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99218E4C5B49EBB6283016A6 /* Pods_VacatioTests.framework */; };
+		5B8D373B26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D373A26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist */; };
 		6F0462508564DD115F331A88 /* Pods_Vacatio_VacatioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B404926DB39C5E6AF136534B /* Pods_Vacatio_VacatioUITests.framework */; };
 		DC5B01FA26F25E24009F8199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B01F926F25E24009F8199 /* AppDelegate.swift */; };
 		DC5B01FC26F25E24009F8199 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B01FB26F25E24009F8199 /* SceneDelegate.swift */; };
@@ -56,13 +51,13 @@
 /* Begin PBXFileReference section */
 		0374B8BB6E8A21F9E7D3BB51 /* Pods-Vacatio-VacatioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.release.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3B77AE11E7043E4D50370282 /* Pods_Vacatio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacatio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49D084F426FD9EBD00751C35 /* GoogleService-Info-Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Staging.plist"; sourceTree = "<group>"; };
-		49D084F826FD9EE100751C35 /* GoogleService-Info-Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Staging.plist"; sourceTree = "<group>"; };
 		49D084FC26FE268C00751C35 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		49D0850026FE304C00751C35 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		49D0850426FE326D00751C35 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		49D0850726FE328A00751C35 /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
 		49D0850A26FE333000751C35 /* Trips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trips.storyboard; sourceTree = "<group>"; };
+		5B8D373A26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Staging.plist"; sourceTree = "<group>"; };
+		5BA1DE1D26FE508400F94695 /* Vacatio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vacatio.entitlements; sourceTree = "<group>"; };
 		780311DAA17B5AD56143728F /* Pods-VacatioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.debug.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		79CF40B372659E1385A0AA60 /* Pods-VacatioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.release.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.release.xcconfig"; sourceTree = "<group>"; };
 		99218E4C5B49EBB6283016A6 /* Pods_VacatioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VacatioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +186,7 @@
 		DC5B022926F25E28009F8199 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5BA1DE1D26FE508400F94695 /* Vacatio.entitlements */,
 				DC5B01F926F25E24009F8199 /* AppDelegate.swift */,
 				DC5B01FB26F25E24009F8199 /* SceneDelegate.swift */,
 				DC5B020226F25E25009F8199 /* Assets.xcassets */,
@@ -242,8 +238,7 @@
 		DC75A63B26F894A3004207D5 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				49D084F426FD9EBD00751C35 /* GoogleService-Info-Staging.plist */,
-				49D084F826FD9EE100751C35 /* GoogleService-Info-Staging.plist */,
+				5B8D373A26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist */,
 				DC5B020726F25E25009F8199 /* Info.plist */,
 				DC75A63C26F8DB2C004207D5 /* Base.xcconfig */,
 				DC75A63D26F8DB9D004207D5 /* Debug.xcconfig */,
@@ -386,8 +381,7 @@
 				DC5B020326F25E25009F8199 /* Assets.xcassets in Resources */,
 				49D084FD26FE268C00751C35 /* Login.storyboard in Resources */,
 				DC5B020126F25E24009F8199 /* Main.storyboard in Resources */,
-				49D084F526FD9EBD00751C35 /* GoogleService-Info-Staging.plist in Resources */,
-				49D084F926FD9EE100751C35 /* GoogleService-Info-Staging.plist in Resources */,
+				5B8D373B26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist in Resources */,
 				49D0850526FE326D00751C35 /* Account.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,8 +390,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49D084FA26FD9EE100751C35 /* GoogleService-Info-Staging.plist in Resources */,
-				49D084F626FD9EBD00751C35 /* GoogleService-Info-Staging.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,8 +397,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49D084FB26FD9EE100751C35 /* GoogleService-Info-Staging.plist in Resources */,
-				49D084F726FD9EBD00751C35 /* GoogleService-Info-Staging.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,15 +695,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Vacatio/Vacatio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Vacatio/Resources/Vacatio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KPL4DJ569T;
+				DEVELOPMENT_TEAM = UDSKCJH3Z7;
 				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = io.WHB.Vacatio.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -726,15 +716,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Vacatio/Vacatio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Vacatio/Resources/Vacatio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KPL4DJ569T;
+				DEVELOPMENT_TEAM = UDSKCJH3Z7;
 				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = io.WHB.Vacatio.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
