@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bMO-0Y-yIt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Yzm-uZ-lcr">
+            <objects>
+                <viewController id="bMO-0Y-yIt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmK-v9-r54">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnQ-nf-cDI">
+                                <rect key="frame" x="16" y="118" width="92" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2e-FY-VwL">
+                                <rect key="frame" x="348" y="713" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.73127239939999999" green="0.67926889660000001" blue="0.96421450379999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s2e-FY-VwL" secondAttribute="height" multiplier="1:1" id="R9j-nj-xab"/>
+                                    <constraint firstAttribute="height" constant="50" id="flO-S9-pcC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="50"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JIT-0r-jK7" kind="show" id="n3J-ij-YZE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zxz-kZ-slb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zxz-kZ-slb" firstAttribute="trailing" secondItem="s2e-FY-VwL" secondAttribute="trailing" constant="16" id="8V1-9v-lQ5"/>
+                            <constraint firstItem="YnQ-nf-cDI" firstAttribute="leading" secondItem="zxz-kZ-slb" secondAttribute="leading" constant="16" id="H3E-rg-6cD"/>
+                            <constraint firstItem="YnQ-nf-cDI" firstAttribute="top" secondItem="zxz-kZ-slb" secondAttribute="top" constant="30" id="grC-Vx-vFG"/>
+                            <constraint firstItem="zxz-kZ-slb" firstAttribute="bottom" secondItem="s2e-FY-VwL" secondAttribute="bottom" constant="50" id="h2G-Jf-8TE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qpC-fb-7gk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Jj-7E-xWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3112" y="1481"/>
+        </scene>
+        <!--Add Trip-->
+        <scene sceneID="Te5-7I-AMk">
+            <objects>
+                <viewController id="JIT-0r-jK7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kiS-XF-3NB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name your trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPP-Mk-Zr1">
+                                <rect key="frame" x="25" y="118" width="124.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When is the trip?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhJ-fj-6lS">
+                                <rect key="frame" x="25" y="211.5" width="142" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to invite freinds?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSC-q5-Cne">
+                                <rect key="frame" x="25" y="604" width="187" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Vacation time!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9y3-qM-VGb">
+                                <rect key="frame" x="25" y="147.5" width="364" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="vO1-MG-sVh">
+                                <rect key="frame" x="25" y="241.5" width="364" height="332.5"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cfD-OK-8H9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9y3-qM-VGb" firstAttribute="top" secondItem="FPP-Mk-Zr1" secondAttribute="bottom" constant="8" symbolic="YES" id="Bav-OW-P1Q"/>
+                            <constraint firstItem="vO1-MG-sVh" firstAttribute="top" secondItem="DhJ-fj-6lS" secondAttribute="bottom" constant="8" id="FVb-oo-TDe"/>
+                            <constraint firstItem="vO1-MG-sVh" firstAttribute="leading" secondItem="cfD-OK-8H9" secondAttribute="leading" constant="25" id="PY1-be-8et"/>
+                            <constraint firstItem="9y3-qM-VGb" firstAttribute="leading" secondItem="cfD-OK-8H9" secondAttribute="leading" constant="25" id="Pe1-nQ-LId"/>
+                            <constraint firstItem="FPP-Mk-Zr1" firstAttribute="top" secondItem="cfD-OK-8H9" secondAttribute="top" constant="30" id="WgY-Lm-7sU"/>
+                            <constraint firstItem="VSC-q5-Cne" firstAttribute="leading" secondItem="cfD-OK-8H9" secondAttribute="leading" constant="25" id="iSW-LQ-pOD"/>
+                            <constraint firstItem="VSC-q5-Cne" firstAttribute="top" secondItem="vO1-MG-sVh" secondAttribute="bottom" constant="30" id="iys-EB-wzf"/>
+                            <constraint firstItem="FPP-Mk-Zr1" firstAttribute="leading" secondItem="cfD-OK-8H9" secondAttribute="leading" constant="25" id="jUJ-ko-rDq"/>
+                            <constraint firstItem="cfD-OK-8H9" firstAttribute="trailing" secondItem="vO1-MG-sVh" secondAttribute="trailing" constant="25" id="lXo-73-43U"/>
+                            <constraint firstItem="cfD-OK-8H9" firstAttribute="trailing" secondItem="9y3-qM-VGb" secondAttribute="trailing" constant="25" id="oeY-rI-JdD"/>
+                            <constraint firstItem="DhJ-fj-6lS" firstAttribute="leading" secondItem="cfD-OK-8H9" secondAttribute="leading" constant="25" id="qVa-zP-tjg"/>
+                            <constraint firstItem="DhJ-fj-6lS" firstAttribute="top" secondItem="9y3-qM-VGb" secondAttribute="bottom" constant="30" id="r8V-hj-NUs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Trip" id="1XZ-OK-vQy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FjN-eq-sQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3840.579710144928" y="1480.5803571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
