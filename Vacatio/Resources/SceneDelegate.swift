@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        // added for login
+        // Added for login.
         let storyboard = UIStoryboard(name: Constants.mainStoryboardFileName, bundle: Bundle.main)
         
         if let _ = UserDefaults.standard.string(forKey: Constants.SMSVerificationID) {
@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
     }
     
-    func changeRootViewController(_ viewController: UIViewController, animated:Bool = true){
+    func changeRootViewController(_ viewController: UIViewController, animated: Bool = true){
         guard let window = self.window else { return }
         window.rootViewController = viewController
     }
