@@ -29,6 +29,8 @@
 		DC5B020626F25E25009F8199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5B020426F25E25009F8199 /* LaunchScreen.storyboard */; };
 		DC5B021126F25E25009F8199 /* VacatioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B021026F25E25009F8199 /* VacatioTests.swift */; };
 		DC5B021C26F25E25009F8199 /* VacatioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B021B26F25E25009F8199 /* VacatioUITests.swift */; };
+		DC8033D826FE407A0055D431 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8033D726FE407A0055D431 /* TripsViewController.swift */; };
+		DC8033DA26FE41000055D431 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8033D926FE41000055D431 /* Environment.swift */; };
 		DC9FE76726FD6D0D00C3C760 /* SMSVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */; };
 		DC9FE76A26FD7E7300C3C760 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76926FD7E7300C3C760 /* Constants.swift */; };
 		DC9FE76C26FD886200C3C760 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */; };
@@ -86,6 +88,8 @@
 		DC75A63D26F8DB9D004207D5 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		DC75A63E26F8DBA8004207D5 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		DC75A63F26F8DBAF004207D5 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		DC8033D726FE407A0055D431 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		DC8033D926FE41000055D431 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVerificationViewController.swift; sourceTree = "<group>"; };
 		DC9FE76926FD7E7300C3C760 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 				DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */,
 				DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */,
 				49D0850026FE304C00751C35 /* AccountViewController.swift */,
+				DC8033D726FE407A0055D431 /* TripsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				DC75A63D26F8DB9D004207D5 /* Debug.xcconfig */,
 				DC75A63E26F8DBA8004207D5 /* Staging.xcconfig */,
 				DC75A63F26F8DBAF004207D5 /* Release.xcconfig */,
+				DC8033D926FE41000055D431 /* Environment.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -518,7 +524,9 @@
 				DC9FE76726FD6D0D00C3C760 /* SMSVerificationViewController.swift in Sources */,
 				49D0850126FE304C00751C35 /* AccountViewController.swift in Sources */,
 				DC9FE76C26FD886200C3C760 /* ExploreViewController.swift in Sources */,
+				DC8033DA26FE41000055D431 /* Environment.swift in Sources */,
 				DC5B01FE26F25E24009F8199 /* LoginViewController.swift in Sources */,
+				DC8033D826FE407A0055D431 /* TripsViewController.swift in Sources */,
 				DC5B01FA26F25E24009F8199 /* AppDelegate.swift in Sources */,
 				DC5B01FC26F25E24009F8199 /* SceneDelegate.swift in Sources */,
 			);

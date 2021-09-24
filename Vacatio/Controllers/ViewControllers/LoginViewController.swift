@@ -49,9 +49,8 @@ class LoginViewController: UIViewController {
             UserDefaults.standard.set(verificationID, forKey: Constants.SMSVerificationID)
             
             let storyBoard: UIStoryboard = UIStoryboard(name: Constants.mainStoryboardFileName, bundle: Bundle.main)
-            let viewController = storyBoard
-                .instantiateViewController(withIdentifier: Constants.smsVerificationViewControllerID)
-            as! SMSVerificationViewController
+            let viewController = storyBoard.instantiateViewController(withIdentifier: Constants.smsVerificationViewControllerID)
+                as! SMSVerificationViewController
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

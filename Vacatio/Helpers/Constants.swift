@@ -16,4 +16,7 @@ public enum Constants {
     static let loginNavigationControllerID: String = "LoginNavigationController"
     static let smsVerificationViewControllerID: String = "SMSVerificationViewController"
     static let mainTabBarControllerID: String = "MainTabBarController"
+    static let exploreViewControllerID: String = "ExploreViewController"
+    static let tripsViewControllerID: String = "TripsViewController"
+    static let accountViewControllerID: String = "AccountViewController"
 }

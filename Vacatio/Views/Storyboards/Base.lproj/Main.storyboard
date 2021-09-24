@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CSw-Fu-9Ib">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CSw-Fu-9Ib">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -313,10 +314,10 @@
             </objects>
             <point key="canvasLocation" x="2312" y="1523"/>
         </scene>
-        <!--accountVC-->
+        <!--AccountViewController-->
         <scene sceneID="ngt-ma-osx">
             <objects>
-                <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="accountVC" id="cGq-t2-55l" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="AccountViewController" id="cGq-t2-55l" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="iO0-zO-BSF"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AU3-yf-KOR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -408,10 +409,10 @@
             </objects>
             <point key="canvasLocation" x="664" y="1957"/>
         </scene>
-        <!--Trips-->
+        <!--TripsViewController-->
         <scene sceneID="57k-gk-ySE">
             <objects>
-                <viewControllerPlaceholder storyboardName="Trips" id="DCa-rc-lqD" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Trips" referencedIdentifier="TripsViewController" id="DCa-rc-lqD" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="JLR-Aq-lWJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jDu-rF-hQv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

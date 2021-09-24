@@ -10,14 +10,11 @@ import Firebase
 
 class AccountViewController: UIViewController {
     
-    
     // MARK: - Outlets
-    
     
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     // MARK: - Actions
@@ -36,12 +33,8 @@ class AccountViewController: UIViewController {
         let loginNavigationController = storyboard.instantiateViewController(identifier: Constants.loginNavigationControllerID)
         
         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(loginNavigationController)
-        
-        
     }
     
-    
     // MARK: - Helper Methods
-    
     
 }
