@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rqR-N2-hYd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Account View Controller-->
+        <scene sceneID="KQy-d5-41R">
+            <objects>
+                <viewController storyboardIdentifier="AccountViewController" id="rqR-N2-hYd" customClass="AccountViewController" customModule="Vacatio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U7C-G3-9Vc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-w4-4UM">
+                                <rect key="frame" x="16" y="74" width="156.5" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(user name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaN-Pv-VZz">
+                                <rect key="frame" x="147" y="167" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PyH-dT-nd9"/>
+                                    <constraint firstAttribute="width" constant="120" id="QID-kj-DJW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4F-PX-BxR">
+                                <rect key="frame" x="25" y="762" width="364" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="G2X-7n-kWv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="rqR-N2-hYd" eventType="touchUpInside" id="PYk-vZ-xUl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UBn-sj-Ewm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KbP-w4-4UM" firstAttribute="leading" secondItem="UBn-sj-Ewm" secondAttribute="leading" constant="16" id="0c5-RU-DlS"/>
+                            <constraint firstItem="N4F-PX-BxR" firstAttribute="leading" secondItem="UBn-sj-Ewm" secondAttribute="leading" constant="25" id="2YT-Xw-3Fi"/>
+                            <constraint firstItem="KbP-w4-4UM" firstAttribute="top" secondItem="UBn-sj-Ewm" secondAttribute="top" constant="30" id="D5O-d8-gAk"/>
+                            <constraint firstItem="KaN-Pv-VZz" firstAttribute="top" secondItem="KbP-w4-4UM" secondAttribute="bottom" constant="45" id="O8z-OB-Aib"/>
+                            <constraint firstItem="KaN-Pv-VZz" firstAttribute="centerX" secondItem="UBn-sj-Ewm" secondAttribute="centerX" id="fxu-Hb-tvT"/>
+                            <constraint firstItem="UBn-sj-Ewm" firstAttribute="bottom" secondItem="N4F-PX-BxR" secondAttribute="bottom" constant="50" id="lSF-90-0DY"/>
+                            <constraint firstItem="UBn-sj-Ewm" firstAttribute="trailing" secondItem="N4F-PX-BxR" secondAttribute="trailing" constant="25" id="nsM-53-1bY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3dr-wo-uGG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zwb-jz-P9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3205.7971014492755" y="2317.6339285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

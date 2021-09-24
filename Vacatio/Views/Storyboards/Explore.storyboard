@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mjc-tp-DXm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Explore View Controller-->
+        <scene sceneID="Fxv-jI-gzb">
+            <objects>
+                <viewController storyboardIdentifier="ExploreViewController" id="Mjc-tp-DXm" customClass="ExploreViewController" customModule="Vacatio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="weM-wn-TXV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vacatio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJn-14-v9a">
+                                <rect key="frame" x="16" y="74" width="140" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" placeholder="Where to?" translatesAutoresizingMaskIntoConstraints="NO" id="4De-v3-A36">
+                                <rect key="frame" x="20.5" y="138" width="373" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xgr-Ju-W0D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4De-v3-A36" firstAttribute="centerX" secondItem="xgr-Ju-W0D" secondAttribute="centerX" id="OP2-HZ-Av3"/>
+                            <constraint firstItem="4De-v3-A36" firstAttribute="top" secondItem="vJn-14-v9a" secondAttribute="bottom" constant="16" id="YrH-Ww-Sdk"/>
+                            <constraint firstItem="4De-v3-A36" firstAttribute="width" secondItem="weM-wn-TXV" secondAttribute="width" multiplier="0.9" id="Z9d-AD-QDS"/>
+                            <constraint firstItem="vJn-14-v9a" firstAttribute="top" secondItem="xgr-Ju-W0D" secondAttribute="top" constant="30" id="okz-Kb-eSg"/>
+                            <constraint firstItem="vJn-14-v9a" firstAttribute="leading" secondItem="xgr-Ju-W0D" secondAttribute="leading" constant="16" id="qj7-zY-ZTv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pp9-Lv-TM3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lL-w9-c0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4741" y="773"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

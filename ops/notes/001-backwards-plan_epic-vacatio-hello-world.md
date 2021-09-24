@@ -18,26 +18,11 @@ less to complete.
     3. As the developers, we want a mock-up of our account sign-up UI, so that we understand
        what the heck our next steps are.
   
-       ##### Acceptance Criteria
-  
-       - Should have a Figma wireframe of Account sign-up flow.
-       - Should only handle sign-in/Account creation with a phone number.
-       - Users should be prompted to enter in their first and last name and optionally upload a profile photo.
-       - Users should be able to sign out of the Account.
-       - The developers should understand and be in concensus about what users see when they
-         first open the app.
-       - Bryan, our project manager, should be linked to our Figma wireframe when it's finished.
-  
     4. As the developers, we want to define our application Account/User Models, so that we
        have some idea of how to store and structure our user information.
   
     5. As the developers, we want to setup a database, so that we can store Account/User
        information separately from our application.
-
-       #### Acceptance Criteria
-
-       - The `User` Model should have a unique identifier that users can use to identify each
-         other by (e.g. phone number).
   
     6. As a user, I want to be able to easily create my account using my phone number, so that
        I can get into Vacatio.
@@ -55,11 +40,6 @@ less to complete.
 
     1. As a user, I want to be able to have an idea of the features Vacatio offers right when I
        open the app, so that I can use the app intuitively.
-
-       #### Acceptance Criteria
-
-       - Should have 3 tab bar items: Trips, Explore, Account (eventually will be "Profile"
-         when logged in, or "Log in" when not logged in.
     
     2. As a user, I want to be able to see my Account information, so that I can make sure it's
        correct.
