@@ -36,7 +36,8 @@ class LoginViewController: UIViewController {
         
         PhoneAuthProvider.provider().verifyPhoneNumber(testPhoneNumber, uiDelegate: nil) { verificationID, error in
             if let error = error {
-                print("Error: could not verify phone number: \(error): \(error.localizedDescription)")
+                let authError = error as NSError
+                print("Error: could not verify phone number: \(authError): \(authError.localizedDescription)")
                 return
             }
             
@@ -46,12 +47,12 @@ class LoginViewController: UIViewController {
             }
             
             UserDefaults.standard.set(verificationID, forKey: Constants.SMSVerificationID)
-        }
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: Constants.mainStoryboardFileName, bundle: Bundle.main)
-        let viewController = storyBoard
-            .instantiateViewController(withIdentifier: Constants.smsVerificationViewControllerID)
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: Constants.mainStoryboardFileName, bundle: Bundle.main)
+            let viewController = storyBoard
+                .instantiateViewController(withIdentifier: Constants.smsVerificationViewControllerID)
             as! SMSVerificationViewController
-        self.navigationController?.pushViewController(viewController, animated: true)
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }

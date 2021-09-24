@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Constants {
+public enum Constants {
     /// The UserDefaults key used to store the Firebase phone login verificationID.
     static let SMSVerificationID: String = "SMSVerificationID"
     

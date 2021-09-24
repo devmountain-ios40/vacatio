@@ -37,7 +37,7 @@ class SMSVerificationViewController: UIViewController {
                 print("Error: could not sign in: \(error): \(error.localizedDescription)")
                 return
             }
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let storyboard = UIStoryboard(name: Constants.mainStoryboardFileName, bundle: Bundle.main)
             let mainTabBarController = storyboard.instantiateViewController(identifier: Constants.mainTabBarControllerID)
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
         }
