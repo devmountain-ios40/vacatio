@@ -24,8 +24,12 @@ class AccountViewController: UIViewController {
         } catch let error {
             print("Error in \(#function) : \(error.localizedDescription) \n---\n \(error)")
         }
-        print("The Logout button was tapped from the Explore tab. Current user uid is: \(Auth.auth().currentUser?.uid ?? "not set")")
         
+        #if DEBUG
+            print("The Logout button was tapped from the Explore tab.",
+                  "Current user uid is:\(Auth.auth().currentUser?.uid ?? "not set")")
+        #endif
+                
         // Clear phone verificationID from UserDefaults.
         UserDefaults.standard.set(nil, forKey: Constants.SMSVerificationID)
         
