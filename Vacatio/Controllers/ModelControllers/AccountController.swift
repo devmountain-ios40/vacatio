@@ -23,7 +23,7 @@ class CLBController {
         
         let aboutUs = CLB(name: "About Us", body: "Insert about us body here")
         
-        return [contact, privacy, aboutUs]
+        return [contact, aboutUs, privacy]
     }
 }
 // create an update views func in the Account View Controller to call and display CLB
