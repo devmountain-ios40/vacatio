@@ -1,0 +1,29 @@
+//
+//  Production.xcconfig
+//  Vacatio
+//
+//  Created by Stephen Davis on 9/20/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+
+// App settings.
+APP_ENVIRONMENT = production
+APP_NAME = $(BASE_APP_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = $BASE_APP_BUNDLE_ID
+APP_VERSION = $(BASE_APP_VERSION)
+
+// Cocoapods environment setup.
+#include "Pods/Target Support Files/Pods-Vacatio/Pods-Vacatio.debug-production.xcconfig"
+#include "Pods/Target Support Files/Pods-Vacatio/Pods-Vacatio.release-production.xcconfig"
+#include "Pods/Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.debug-production.xcconfig"
+#include "Pods/Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.release-production.xcconfig"
+#include "Pods/Target Support Files/Pods-VacatioTests/Pods-VacatioTests.debug-production.xcconfig"
+#include "Pods/Target Support Files/Pods-VacatioTests/Pods-VacatioTests.release-production.xcconfig"
+
+// Firebase settings.
+GOOGLE_SERVICE_PLIST = $(BASE_GOOGLE_SERVICE_PLIST)
+GOOGLE_SERVICE_REVERSED_CLIENT_ID = com.googleusercontent.apps.280200682694-fun4n2nv3hpejbli3b0gkpgc70b6aujg

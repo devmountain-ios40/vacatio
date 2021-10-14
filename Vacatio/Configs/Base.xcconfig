@@ -1,0 +1,17 @@
+//
+//  Base.xcconfig
+//  Vacatio
+//
+//  Created by Stephen Davis on 9/20/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Base settings.
+BASE_APP_NAME = Vacatio
+BASE_APP_BUNDLE_ID = com.webdavis.Vacatio
+BASE_APP_VERSION = 0.1
+
+// Firebase settings.
+BASE_GOOGLE_SERVICE_PLIST = GoogleService-Info

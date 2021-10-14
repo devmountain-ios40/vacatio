@@ -93,8 +93,5 @@ iOSInjectionProject/
 # Ignore Mac OS Finder metadata files.
 .DS_Store
 
-# Ignore Google Firebase service files.
-GoogleService-Info*.plist
-
 # Ignore Apple APNs authentication key files.
 *.p8

@@ -14,13 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // MARK: - Configure GoogleService-Info.plist
-        let googleServiceFilePath = Bundle.main.path(forResource: Environment.googleServiceInfo, ofType: "plist")
-        guard let firebaseOptions = FirebaseOptions.init(contentsOfFile: googleServiceFilePath!) else {
-            print("Error: couldn't load config: \(Environment.googleServiceInfo)")
-            return false
-        }
-        FirebaseApp.configure(options: firebaseOptions)
+        FirebaseConfig.setup()
         return true
     }
 

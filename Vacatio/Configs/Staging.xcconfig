@@ -1,0 +1,30 @@
+//
+//  Staging.xcconfig
+//  Vacatio
+//
+//  Created by Stephen Davis on 9/20/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+
+// App settings.
+APP_ENVIRONMENT = staging
+APP_NAME = $(BASE_APP_NAME) (staging)
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_APP_BUNDLE_ID).staging
+APP_VERSION = $(BASE_APP_VERSION)
+
+// Cocoapods environment setup.
+#include "Pods/Target Support Files/Pods-Vacatio/Pods-Vacatio.debug-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-Vacatio/Pods-Vacatio.release-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-VacatioTests/Pods-VacatioTests.debug-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-VacatioTests/Pods-VacatioTests.release-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.debug-staging.xcconfig"
+#include "Pods/Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.release-staging.xcconfig"
+
+// Firebase settings.
+GOOGLE_SERVICE_PLIST = $(BASE_GOOGLE_SERVICE_PLIST)-Staging
+GOOGLE_SERVICE_REVERSED_CLIENT_ID = com.googleusercontent.apps.518847224920-rhgpmedge0smhrveha95hsdrmc2jdmsk
+‎
