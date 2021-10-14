@@ -29,18 +29,62 @@ public enum Environment {
         enum Plist {
             static let appEnvironment = "APP_ENVIRONMENT"
             static let googleServiceInfo = "GOOGLE_SERVICE_PLIST"
+            static let firebaseEmulatorURL = "FIREBASE_EMULATOR_URL"
+            static let firebaseEmulatorAuthPort = "FIREBASE_EMULATOR_AUTH_PORT"
+            static let firebaseEmulatorAuthProjectID = "FIREBASE_EMULATOR_AUTH_PROJECT_ID"
+            static let firebaseEmulatorFirestorePort = "FIREBASE_EMULATOR_FIRESTORE_PORT"
         }
     }
     
     // MARK: - Key Properties
-    /// The name of the app, which depends on the environment (e.g. development, staging, production).
-    static let appEnvironment: String = {
-        return getKey(Keys.Plist.appEnvironment)
-    }()
+    /**
+     # Summary
+     Tests whether the app enviroment is "Development".
+     
+     - Returns: `true` if the Xcode scheme is in Development, `false` otherwise.
+     */
+    static func inDevelopmentEnvironment() -> Bool {
+        return getKey(Keys.Plist.appEnvironment) == "development"
+    }
     
     /// GoogleService-Info.plist file name.
     static let googleServiceInfo: String = {
         return getKey(Keys.Plist.googleServiceInfo)
     }()
-}
 
+    /// The base URL for the Firebase Auth Emulator. This should be set to `localhost`. To change this value edit the
+    /// `firebase.json` file. Remember to edit the value in ``Development.xcconfig`` as well
+    static let firebaseEmulatorURL: String = {
+        return getKey(Keys.Plist.firebaseEmulatorURL)
+    }()
+    
+    /// The port that the Firebase Auth Emulator is listening on. The default is `9099`. To change this value edit the
+    /// `firebase.json` file. Remember to edit the value in ``Development.xcconfig`` as well.
+    static let firebaseEmulatorAuthPort: String = {
+        return getKey(Keys.Plist.firebaseEmulatorAuthPort)
+    }()
+    
+    /**
+     # Summary
+     The project ID that the Firebase Auth Emulator is using. To point the Auth Emulator at a different project ID, `cd` into this
+     project's directory and run the following command from the terminal:
+     
+     ```
+     $ firebase use <project-id>`
+     ```
+     > _Replace `<project-id>` with the name of your desired Firebase project ID_.
+     > For example: `firebase use money-management-development`
+     
+     # Important
+     Remember to edit the value in ``Development.xcconfig`` as well.
+     */
+    static let firebaseEmulatorAuthProjectID: String = {
+        return getKey(Keys.Plist.firebaseEmulatorAuthProjectID)
+    }()
+    
+    /// The port that the Firebase Firestore Emulator is listening on. The default is `8080`. To change this value edit the
+    /// `firebase.json` file. Remember to edit the value in ``Development.xcconfig`` as well.
+    static let firebaseEmulatorFirestorePort: String = {
+        return getKey(Keys.Plist.firebaseEmulatorAuthPort)
+    }()
+}

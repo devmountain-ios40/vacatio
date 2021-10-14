@@ -95,3 +95,9 @@ iOSInjectionProject/
 
 # Ignore Apple APNs authentication key files.
 *.p8
+
+# Ignore log files.
+*.log
+
+# Ignore local npm packages.
+node_modules/

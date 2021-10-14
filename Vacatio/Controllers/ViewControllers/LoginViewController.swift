@@ -22,19 +22,17 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func continueButtonIsTapped(_ sender: UIButton) {
-//        guard
-//            let phoneNumber = enterPhoneNumberTextField.text,
-//            !phoneNumber.isEmpty
-//        else { return }
+        // TODO: For now, Assumes the number is a U.S. number.
+        var phoneNumber = "+1\(enterPhoneNumberTextField.text ?? "")"
         
-        // XXX: This is ONLY for testing!
-        let testPhoneNumber: String = "+11234567890"
-        
-        #if DEBUG
+        // WARNING: This should ONLY execute when the "development" scheme is set.
+        if Environment.inDevelopmentEnvironment() {
+            // This is ONLY for testing! It's assumed this number has been set in the Auth Emulator.
             Auth.auth().settings?.isAppVerificationDisabledForTesting = true
-        #endif
+            if phoneNumber == "+1" { phoneNumber = "+11234567890" }
+        }
         
-        PhoneAuthProvider.provider().verifyPhoneNumber(testPhoneNumber, uiDelegate: nil) { verificationID, error in
+        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { verificationID, error in
             if let error = error {
                 let authError = error as NSError
                 print("Error: could not verify phone number: \(authError): \(authError.localizedDescription)")
