@@ -16,6 +16,9 @@ APP_NAME = $(BASE_APP_NAME)
 PRODUCT_BUNDLE_IDENTIFIER = $BASE_APP_BUNDLE_ID
 APP_VERSION = $(BASE_APP_VERSION)
 
+// CloudKit settings.
+CLOUDKIT_CONTAINER = $(BASE_CLOUDKIT_CONTAINER)
+
 // Cocoapods environment setup.
 #include "Pods/Target Support Files/Pods-Vacatio/Pods-Vacatio.debug-production.xcconfig"
 #include "Pods/Target Support Files/Pods-Vacatio/Pods-Vacatio.release-production.xcconfig"

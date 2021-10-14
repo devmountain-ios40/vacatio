@@ -28,6 +28,7 @@ public enum Environment {
     enum Keys {
         enum Plist {
             static let appEnvironment = "APP_ENVIRONMENT"
+            static let cloudKitContainer = "CLOUDKIT_CONTAINER"
             static let googleServiceInfo = "GOOGLE_SERVICE_PLIST"
             static let firebaseEmulatorURL = "FIREBASE_EMULATOR_URL"
             static let firebaseEmulatorAuthPort = "FIREBASE_EMULATOR_AUTH_PORT"
@@ -46,6 +47,11 @@ public enum Environment {
     static func inDevelopmentEnvironment() -> Bool {
         return getKey(Keys.Plist.appEnvironment) == "development"
     }
+    
+    static let cloudKitContainer: String = {
+        print("CLOUDKIT_CONTAINER: \(getKey(Keys.Plist.googleServiceInfo))")
+        return getKey(Keys.Plist.cloudKitContainer)
+    }()
     
     /// GoogleService-Info.plist file name.
     static let googleServiceInfo: String = {
