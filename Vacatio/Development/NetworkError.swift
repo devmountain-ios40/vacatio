@@ -9,7 +9,7 @@ import Foundation
 
 enum NetworkError: LocalizedError {
     case thrownError(Error)
-    case invalidURL
+    case invalidURL(URL)
     case nilParameters
     case couldNotDecode
     case redirectionError
@@ -23,8 +23,8 @@ enum NetworkError: LocalizedError {
         switch self {
             case .thrownError(let error):
                 return "\(error)"
-            case .invalidURL:
-                return "Unable to reach the server"
+            case .invalidURL(let url):
+                return "Unable to reach the server. The following URL was requested: \(url.absoluteString)"
             case .nilParameters:
                 return "Parameters were nil"
             case .couldNotDecode:

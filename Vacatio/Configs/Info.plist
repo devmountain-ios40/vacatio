@@ -4,8 +4,6 @@
 <dict>
 	<key>APP_ENVIRONMENT</key>
 	<string>$(APP_ENVIRONMENT)</string>
-	<key>GOOGLE_SERVICE_REVERSED_CLIENT_ID</key>
-	<string>$(GOOGLE_SERVICE_REVERSED_CLIENT_ID)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -33,8 +31,18 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FIREBASE_EMULATOR_AUTH_PORT</key>
+	<string>$(FIREBASE_EMULATOR_AUTH_PORT)</string>
+	<key>FIREBASE_EMULATOR_AUTH_PROJECT_ID</key>
+	<string>$(FIREBASE_EMULATOR_AUTH_PROJECT_ID)</string>
+	<key>FIREBASE_EMULATOR_FIRESTORE_PORT</key>
+	<string>$(FIREBASE_EMULATOR_FIRESTORE_PORT)</string>
+	<key>FIREBASE_EMULATOR_URL</key>
+	<string>$(FIREBASE_EMULATOR_URL)</string>
 	<key>GOOGLE_SERVICE_PLIST</key>
-	<string>GoogleService-Info-Staging</string>
+	<string>$(GOOGLE_SERVICE_PLIST)</string>
+	<key>GOOGLE_SERVICE_REVERSED_CLIENT_ID</key>
+	<string>$(GOOGLE_SERVICE_REVERSED_CLIENT_ID)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>

@@ -48,9 +48,10 @@ class VerificationCodeController {
             do {
                 let result = try decoder.decode(TopLevelVerificationCodes.self, from: data)
                 let verificationCodes: [VerificationCode] = result.verificationCodes
-                // Due to the nature of the Auth REST API, this may be force unwrapped. If no
-                // data is returned (as previously checked) then this will not exist.
-                completion(.success(verificationCodes.last!.code))
+                guard let verificationCode = verificationCodes.last else {
+                    return completion(.failure(.invalidURL(baseURL)))
+                }
+                completion(.success(verificationCode.code))
             } catch {
                 completion(.failure(.couldNotDecode))
             }

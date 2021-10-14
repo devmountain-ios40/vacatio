@@ -73,7 +73,7 @@ public enum Environment {
      $ firebase use <project-id>`
      ```
      > _Replace `<project-id>` with the name of your desired Firebase project ID_.
-     > For example: `firebase use money-management-development`
+     > For example: `firebase use vacatio-development`
      
      # Important
      Remember to edit the value in ``Development.xcconfig`` as well.

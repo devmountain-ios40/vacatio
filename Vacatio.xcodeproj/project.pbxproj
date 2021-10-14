@@ -27,8 +27,8 @@
 		DC5B021C26F25E25009F8199 /* VacatioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B021B26F25E25009F8199 /* VacatioUITests.swift */; };
 		DC8033D826FE407A0055D431 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8033D726FE407A0055D431 /* TripsViewController.swift */; };
 		DC8033DA26FE41000055D431 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8033D926FE41000055D431 /* Environment.swift */; };
-		DC9FE76726FD6D0D00C3C760 /* SMSVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */; };
-		DC9FE76A26FD7E7300C3C760 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76926FD7E7300C3C760 /* Constants.swift */; };
+		DC9FE76726FD6D0D00C3C760 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76626FD6D0D00C3C760 /* VerificationViewController.swift */; };
+		DC9FE76A26FD7E7300C3C760 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76926FD7E7300C3C760 /* AppConstants.swift */; };
 		DC9FE76C26FD886200C3C760 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */; };
 		DCA9352E2717B05A0083B934 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCA9352D2717B05A0083B934 /* GoogleService-Info.plist */; };
 		DCA9354027189A1C0083B934 /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCA9353F27189A1C0083B934 /* GoogleService-Info-Development.plist */; };
@@ -36,6 +36,12 @@
 		DCA935452718BB790083B934 /* VerificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935442718BB790083B934 /* VerificationCode.swift */; };
 		DCA935472718BB9E0083B934 /* VerificationCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935462718BB9E0083B934 /* VerificationCodeController.swift */; };
 		DCA935492718BBE10083B934 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935482718BBE10083B934 /* NetworkError.swift */; };
+		DCA9354B2718C7120083B934 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9354A2718C7120083B934 /* AuthController.swift */; };
+		DCA9354F2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9354E2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift */; };
+		DCA935512718CDFF0083B934 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935502718CDFF0083B934 /* UserController.swift */; };
+		DCA935562718CEA00083B934 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935552718CEA00083B934 /* User.swift */; };
+		DCA935592718CEE50083B934 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935582718CEE50083B934 /* StringExtension.swift */; };
+		DCA9355D2718D52D0083B934 /* DisplayNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9355C2718D52D0083B934 /* DisplayNameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,8 +114,8 @@
 		DC75A63F26F8DBAF004207D5 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		DC8033D726FE407A0055D431 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		DC8033D926FE41000055D431 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVerificationViewController.swift; sourceTree = "<group>"; };
-		DC9FE76926FD7E7300C3C760 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC9FE76626FD6D0D00C3C760 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		DC9FE76926FD7E7300C3C760 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		DCA9352D2717B05A0083B934 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCA9353F27189A1C0083B934 /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
@@ -117,6 +123,12 @@
 		DCA935442718BB790083B934 /* VerificationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCode.swift; sourceTree = "<group>"; };
 		DCA935462718BB9E0083B934 /* VerificationCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeController.swift; sourceTree = "<group>"; };
 		DCA935482718BBE10083B934 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DCA9354A2718C7120083B934 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		DCA9354E2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRAuthErrorCodeExtension.swift; sourceTree = "<group>"; };
+		DCA935502718CDFF0083B934 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		DCA935552718CEA00083B934 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DCA935582718CEE50083B934 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		DCA9355C2718D52D0083B934 /* DisplayNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNameViewController.swift; sourceTree = "<group>"; };
 		DF49773F12BAD0DAE8B23820 /* Pods-Vacatio.release-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio.release-development.xcconfig"; path = "Target Support Files/Pods-Vacatio/Pods-Vacatio.release-development.xcconfig"; sourceTree = "<group>"; };
 		DF54D1C58DCE854115685527 /* Pods-VacatioTests.debug-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.debug-development.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.debug-development.xcconfig"; sourceTree = "<group>"; };
 		F921F6DC0F36EC894498837A /* Pods-VacatioTests.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.debug-production.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.debug-production.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				49E6B6392705793700950B24 /* AccountController.swift */,
+				DCA9354A2718C7120083B934 /* AuthController.swift */,
+				DCA935502718CDFF0083B934 /* UserController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -214,10 +228,11 @@
 		DC5B01F826F25E24009F8199 /* Vacatio */ = {
 			isa = PBXGroup;
 			children = (
-				DC9FE76826FD7E6300C3C760 /* Helpers */,
 				DC75A63B26F894A3004207D5 /* Configs */,
+				DCA935542718CE900083B934 /* Models */,
 				DC5B022C26F25E3D009F8199 /* Views */,
 				DC5B022A26F25E2D009F8199 /* Controllers */,
+				DC9FE76826FD7E6300C3C760 /* Helpers */,
 				DC5B022926F25E28009F8199 /* Resources */,
 				DCA935432718BB370083B934 /* Development */,
 			);
@@ -266,10 +281,11 @@
 			isa = PBXGroup;
 			children = (
 				DC5B01FD26F25E24009F8199 /* LoginViewController.swift */,
-				DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */,
+				DC9FE76626FD6D0D00C3C760 /* VerificationViewController.swift */,
+				DCA9355C2718D52D0083B934 /* DisplayNameViewController.swift */,
 				DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */,
-				49D0850026FE304C00751C35 /* AccountViewController.swift */,
 				DC8033D726FE407A0055D431 /* TripsViewController.swift */,
+				49D0850026FE304C00751C35 /* AccountViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -315,7 +331,9 @@
 		DC9FE76826FD7E6300C3C760 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				DC9FE76926FD7E7300C3C760 /* Constants.swift */,
+				DCA935572718CEDC0083B934 /* Extensions */,
+				DCA9354D2718C7AE0083B934 /* Errors */,
+				DC9FE76926FD7E7300C3C760 /* AppConstants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -328,6 +346,30 @@
 				DCA935482718BBE10083B934 /* NetworkError.swift */,
 			);
 			path = Development;
+			sourceTree = "<group>";
+		};
+		DCA9354D2718C7AE0083B934 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9354E2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		DCA935542718CE900083B934 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCA935552718CEA00083B934 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCA935572718CEDC0083B934 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCA935582718CEE50083B934 /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F0578EDC4C872B7DF38AE808 /* Frameworks */ = {
@@ -586,20 +628,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC9FE76A26FD7E7300C3C760 /* Constants.swift in Sources */,
+				DC9FE76A26FD7E7300C3C760 /* AppConstants.swift in Sources */,
 				DCA935492718BBE10083B934 /* NetworkError.swift in Sources */,
 				DCA935472718BB9E0083B934 /* VerificationCodeController.swift in Sources */,
 				49E6B63A2705793700950B24 /* AccountController.swift in Sources */,
-				DC9FE76726FD6D0D00C3C760 /* SMSVerificationViewController.swift in Sources */,
+				DC9FE76726FD6D0D00C3C760 /* VerificationViewController.swift in Sources */,
 				DCA935452718BB790083B934 /* VerificationCode.swift in Sources */,
+				DCA935512718CDFF0083B934 /* UserController.swift in Sources */,
 				49D0850126FE304C00751C35 /* AccountViewController.swift in Sources */,
+				DCA9354B2718C7120083B934 /* AuthController.swift in Sources */,
 				DC9FE76C26FD886200C3C760 /* ExploreViewController.swift in Sources */,
 				DCA935422718AF130083B934 /* FirebaseConfig.swift in Sources */,
 				DC8033DA26FE41000055D431 /* Environment.swift in Sources */,
+				DCA935592718CEE50083B934 /* StringExtension.swift in Sources */,
 				DC5B01FE26F25E24009F8199 /* LoginViewController.swift in Sources */,
 				DC8033D826FE407A0055D431 /* TripsViewController.swift in Sources */,
 				DC5B01FA26F25E24009F8199 /* AppDelegate.swift in Sources */,
+				DCA9355D2718D52D0083B934 /* DisplayNameViewController.swift in Sources */,
 				DC5B01FC26F25E24009F8199 /* SceneDelegate.swift in Sources */,
+				DCA9354F2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift in Sources */,
+				DCA935562718CEA00083B934 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,7 +837,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -810,7 +857,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -982,7 +1029,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1110,7 +1157,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1232,7 +1279,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1354,7 +1401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
