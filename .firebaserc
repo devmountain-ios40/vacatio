@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "vacatio-development",
+    "staging": "vacatio-staging",
+    "production": "vacatio-production"
+  },
+  "targets": {}
+}
