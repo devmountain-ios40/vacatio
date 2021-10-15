@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		49D0850526FE326D00751C35 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D0850426FE326D00751C35 /* Account.storyboard */; };
 		49D0850826FE328A00751C35 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D0850726FE328A00751C35 /* Explore.storyboard */; };
 		49D0850B26FE333000751C35 /* Trips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D0850A26FE333000751C35 /* Trips.storyboard */; };
+		49E6B63A2705793700950B24 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6B6392705793700950B24 /* AccountController.swift */; };
 		57D76FD4E494E9927936EB05 /* Pods_VacatioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99218E4C5B49EBB6283016A6 /* Pods_VacatioTests.framework */; };
 		5B8D373B26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D373A26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist */; };
 		6F0462508564DD115F331A88 /* Pods_Vacatio_VacatioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B404926DB39C5E6AF136534B /* Pods_Vacatio_VacatioUITests.framework */; };
@@ -26,9 +27,31 @@
 		DC5B021C26F25E25009F8199 /* VacatioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B021B26F25E25009F8199 /* VacatioUITests.swift */; };
 		DC8033D826FE407A0055D431 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8033D726FE407A0055D431 /* TripsViewController.swift */; };
 		DC8033DA26FE41000055D431 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8033D926FE41000055D431 /* Environment.swift */; };
-		DC9FE76726FD6D0D00C3C760 /* SMSVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */; };
-		DC9FE76A26FD7E7300C3C760 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76926FD7E7300C3C760 /* Constants.swift */; };
+		DC9FE76726FD6D0D00C3C760 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76626FD6D0D00C3C760 /* VerificationViewController.swift */; };
+		DC9FE76A26FD7E7300C3C760 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76926FD7E7300C3C760 /* AppConstants.swift */; };
 		DC9FE76C26FD886200C3C760 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */; };
+		DCA9352E2717B05A0083B934 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCA9352D2717B05A0083B934 /* GoogleService-Info.plist */; };
+		DCA9354027189A1C0083B934 /* GoogleService-Info-Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCA9353F27189A1C0083B934 /* GoogleService-Info-Development.plist */; };
+		DCA935422718AF130083B934 /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935412718AF130083B934 /* FirebaseConfig.swift */; };
+		DCA935452718BB790083B934 /* VerificationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935442718BB790083B934 /* VerificationCode.swift */; };
+		DCA935472718BB9E0083B934 /* VerificationCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935462718BB9E0083B934 /* VerificationCodeController.swift */; };
+		DCA935492718BBE10083B934 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935482718BBE10083B934 /* NetworkError.swift */; };
+		DCA9354B2718C7120083B934 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9354A2718C7120083B934 /* AuthController.swift */; };
+		DCA9354F2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9354E2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift */; };
+		DCA935512718CDFF0083B934 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935502718CDFF0083B934 /* UserController.swift */; };
+		DCA935562718CEA00083B934 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935552718CEA00083B934 /* User.swift */; };
+		DCA935592718CEE50083B934 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935582718CEE50083B934 /* StringExtension.swift */; };
+		DCA9355D2718D52D0083B934 /* DisplayNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9355C2718D52D0083B934 /* DisplayNameViewController.swift */; };
+		DCA935602718E7B90083B934 /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9355F2718E7B90083B934 /* StorageProtocol.swift */; };
+		DCA935622718E7FF0083B934 /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935612718E7FF0083B934 /* CloudKitService.swift */; };
+		DCA935642718E8100083B934 /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935632718E8100083B934 /* RecordManager.swift */; };
+		DCA935662718E8CD0083B934 /* ConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935652718E8CD0083B934 /* ConfigController.swift */; };
+		DCA935682718E8E70083B934 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935672718E8E70083B934 /* Config.swift */; };
+		DCA9356A2718E9040083B934 /* RecordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA935692718E9040083B934 /* RecordProtocol.swift */; };
+		DCA9356C2718E9380083B934 /* ConfigError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9356B2718E9380083B934 /* ConfigError.swift */; };
+		DCA9356E2718E9540083B934 /* CloudKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9356D2718E9540083B934 /* CloudKitError.swift */; };
+		DCA935702718E98B0083B934 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9356F2718E98B0083B934 /* NotificationNameExtension.swift */; };
+		DCA935722718EA380083B934 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA935712718EA380083B934 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,20 +73,35 @@
 
 /* Begin PBXFileReference section */
 		0374B8BB6E8A21F9E7D3BB51 /* Pods-Vacatio-VacatioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.release.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		10A03A8CDE60FF05686FFD3B /* Pods-Vacatio.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio.debug-staging.xcconfig"; path = "Target Support Files/Pods-Vacatio/Pods-Vacatio.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		29267FB2D34EFA859A9AEC01 /* Pods-Vacatio.release-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio.release-production.xcconfig"; path = "Target Support Files/Pods-Vacatio/Pods-Vacatio.release-production.xcconfig"; sourceTree = "<group>"; };
 		3B77AE11E7043E4D50370282 /* Pods_Vacatio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacatio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4633F254B66BB4A3ED99F4CF /* Pods-Vacatio-VacatioUITests.release-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.release-development.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.release-development.xcconfig"; sourceTree = "<group>"; };
+		4779184B3D61756DB450D985 /* Pods-Vacatio.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio.debug-production.xcconfig"; path = "Target Support Files/Pods-Vacatio/Pods-Vacatio.debug-production.xcconfig"; sourceTree = "<group>"; };
+		482F7F300A42083230886366 /* Pods-Vacatio.debug-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio.debug-development.xcconfig"; path = "Target Support Files/Pods-Vacatio/Pods-Vacatio.debug-development.xcconfig"; sourceTree = "<group>"; };
 		49D084FC26FE268C00751C35 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		49D0850026FE304C00751C35 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		49D0850426FE326D00751C35 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		49D0850726FE328A00751C35 /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
 		49D0850A26FE333000751C35 /* Trips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trips.storyboard; sourceTree = "<group>"; };
+		49E6B6392705793700950B24 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
 		5B8D373A26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Staging.plist"; sourceTree = "<group>"; };
-		5BA1DE1D26FE508400F94695 /* Vacatio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vacatio.entitlements; sourceTree = "<group>"; };
+		70BB74A2AFDAC02AAC4AC04F /* Pods-Vacatio-VacatioUITests.release-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.release-production.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.release-production.xcconfig"; sourceTree = "<group>"; };
 		780311DAA17B5AD56143728F /* Pods-VacatioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.debug.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		79CF40B372659E1385A0AA60 /* Pods-VacatioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.release.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.release.xcconfig"; sourceTree = "<group>"; };
+		807EE7002EDA806E544928E5 /* Pods-Vacatio.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio.release-staging.xcconfig"; path = "Target Support Files/Pods-Vacatio/Pods-Vacatio.release-staging.xcconfig"; sourceTree = "<group>"; };
+		8BC7D64828F47376E7B6C56D /* Pods-Vacatio-VacatioUITests.debug-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.debug-development.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.debug-development.xcconfig"; sourceTree = "<group>"; };
 		99218E4C5B49EBB6283016A6 /* Pods_VacatioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VacatioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5397E43609A94A3F07385C /* Pods-Vacatio-VacatioUITests.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.debug-production.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.debug-production.xcconfig"; sourceTree = "<group>"; };
+		B1D59C5C0236C0DEC62FD55F /* Pods-VacatioTests.release-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.release-production.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.release-production.xcconfig"; sourceTree = "<group>"; };
+		B29C711E5DFC24EDAA25F031 /* Pods-VacatioTests.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.release-staging.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.release-staging.xcconfig"; sourceTree = "<group>"; };
 		B2FABC4001C2C0982E77C7A4 /* Pods-Vacatio-VacatioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.debug.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B404926DB39C5E6AF136534B /* Pods_Vacatio_VacatioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacatio_VacatioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD420B9FDA77E27C034D2E9C /* Pods-Vacatio-VacatioUITests.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.debug-staging.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		C42D1A24E4504344330FC353 /* Pods-VacatioTests.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.debug-staging.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.debug-staging.xcconfig"; sourceTree = "<group>"; };
 		CA4F6F8451DA8186A52A2B32 /* Pods-Vacatio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio.debug.xcconfig"; path = "Target Support Files/Pods-Vacatio/Pods-Vacatio.debug.xcconfig"; sourceTree = "<group>"; };
+		CB3FE6628AE0CFDDF5590CE7 /* Pods-Vacatio-VacatioUITests.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.release-staging.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.release-staging.xcconfig"; sourceTree = "<group>"; };
+		D9E19B9E5C9705125074A9D6 /* Pods-VacatioTests.release-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.release-development.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.release-development.xcconfig"; sourceTree = "<group>"; };
 		D9FB495D7F91566AB17D471A /* Pods-Vacatio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio.release.xcconfig"; path = "Target Support Files/Pods-Vacatio/Pods-Vacatio.release.xcconfig"; sourceTree = "<group>"; };
 		DC5B01F626F25E24009F8199 /* Vacatio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vacatio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5B01F926F25E24009F8199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,14 +118,45 @@
 		DC5B021B26F25E25009F8199 /* VacatioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacatioUITests.swift; sourceTree = "<group>"; };
 		DC5B021D26F25E25009F8199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC75A63C26F8DB2C004207D5 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
-		DC75A63D26F8DB9D004207D5 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		DC75A63D26F8DB9D004207D5 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		DC75A63E26F8DBA8004207D5 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
-		DC75A63F26F8DBAF004207D5 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		DC75A63F26F8DBAF004207D5 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		DC8033D726FE407A0055D431 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		DC8033D926FE41000055D431 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVerificationViewController.swift; sourceTree = "<group>"; };
-		DC9FE76926FD7E7300C3C760 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC9FE76626FD6D0D00C3C760 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		DC9FE76926FD7E7300C3C760 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		DCA9352D2717B05A0083B934 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCA9353F27189A1C0083B934 /* GoogleService-Info-Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Development.plist"; sourceTree = "<group>"; };
+		DCA935412718AF130083B934 /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		DCA935442718BB790083B934 /* VerificationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCode.swift; sourceTree = "<group>"; };
+		DCA935462718BB9E0083B934 /* VerificationCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeController.swift; sourceTree = "<group>"; };
+		DCA935482718BBE10083B934 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DCA9354A2718C7120083B934 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		DCA9354E2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRAuthErrorCodeExtension.swift; sourceTree = "<group>"; };
+		DCA935502718CDFF0083B934 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		DCA935552718CEA00083B934 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DCA935582718CEE50083B934 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		DCA9355C2718D52D0083B934 /* DisplayNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNameViewController.swift; sourceTree = "<group>"; };
+		DCA9355F2718E7B90083B934 /* StorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
+		DCA935612718E7FF0083B934 /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		DCA935632718E8100083B934 /* RecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
+		DCA935652718E8CD0083B934 /* ConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigController.swift; sourceTree = "<group>"; };
+		DCA935672718E8E70083B934 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		DCA935692718E9040083B934 /* RecordProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordProtocol.swift; sourceTree = "<group>"; };
+		DCA9356B2718E9380083B934 /* ConfigError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigError.swift; sourceTree = "<group>"; };
+		DCA9356D2718E9540083B934 /* CloudKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitError.swift; sourceTree = "<group>"; };
+		DCA9356F2718E98B0083B934 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
+		DCA935712718EA380083B934 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DCA935732718EB370083B934 /* VacatioDebug-Development.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VacatioDebug-Development.entitlements"; sourceTree = "<group>"; };
+		DCA935742718EB520083B934 /* VacatioDebug-Staging.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VacatioDebug-Staging.entitlements"; sourceTree = "<group>"; };
+		DCA935752718EB690083B934 /* VacatioDebug-Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VacatioDebug-Production.entitlements"; sourceTree = "<group>"; };
+		DCA935762718EB890083B934 /* VacatioRelease-Development.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VacatioRelease-Development.entitlements"; sourceTree = "<group>"; };
+		DCA935772718EBA30083B934 /* VacatioRelease-Staging.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VacatioRelease-Staging.entitlements"; sourceTree = "<group>"; };
+		DCA935782718EBAD0083B934 /* VacatioRelease-Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VacatioRelease-Production.entitlements"; sourceTree = "<group>"; };
+		DF49773F12BAD0DAE8B23820 /* Pods-Vacatio.release-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio.release-development.xcconfig"; path = "Target Support Files/Pods-Vacatio/Pods-Vacatio.release-development.xcconfig"; sourceTree = "<group>"; };
+		DF54D1C58DCE854115685527 /* Pods-VacatioTests.debug-development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.debug-development.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.debug-development.xcconfig"; sourceTree = "<group>"; };
+		F921F6DC0F36EC894498837A /* Pods-VacatioTests.debug-production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VacatioTests.debug-production.xcconfig"; path = "Target Support Files/Pods-VacatioTests/Pods-VacatioTests.debug-production.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DF69C244518CE40CA63ABB0 /* Pods_Vacatio.framework in Frameworks */,
+				DCA935722718EA380083B934 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +188,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49E6B6382705791500950B24 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				49E6B6392705793700950B24 /* AccountController.swift */,
+				DCA9354A2718C7120083B934 /* AuthController.swift */,
+				DCA935502718CDFF0083B934 /* UserController.swift */,
+				DCA935652718E8CD0083B934 /* ConfigController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
 		513444550B258FF62976027E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +208,24 @@
 				0374B8BB6E8A21F9E7D3BB51 /* Pods-Vacatio-VacatioUITests.release.xcconfig */,
 				780311DAA17B5AD56143728F /* Pods-VacatioTests.debug.xcconfig */,
 				79CF40B372659E1385A0AA60 /* Pods-VacatioTests.release.xcconfig */,
+				482F7F300A42083230886366 /* Pods-Vacatio.debug-development.xcconfig */,
+				10A03A8CDE60FF05686FFD3B /* Pods-Vacatio.debug-staging.xcconfig */,
+				4779184B3D61756DB450D985 /* Pods-Vacatio.debug-production.xcconfig */,
+				DF49773F12BAD0DAE8B23820 /* Pods-Vacatio.release-development.xcconfig */,
+				807EE7002EDA806E544928E5 /* Pods-Vacatio.release-staging.xcconfig */,
+				29267FB2D34EFA859A9AEC01 /* Pods-Vacatio.release-production.xcconfig */,
+				8BC7D64828F47376E7B6C56D /* Pods-Vacatio-VacatioUITests.debug-development.xcconfig */,
+				BD420B9FDA77E27C034D2E9C /* Pods-Vacatio-VacatioUITests.debug-staging.xcconfig */,
+				AE5397E43609A94A3F07385C /* Pods-Vacatio-VacatioUITests.debug-production.xcconfig */,
+				4633F254B66BB4A3ED99F4CF /* Pods-Vacatio-VacatioUITests.release-development.xcconfig */,
+				CB3FE6628AE0CFDDF5590CE7 /* Pods-Vacatio-VacatioUITests.release-staging.xcconfig */,
+				70BB74A2AFDAC02AAC4AC04F /* Pods-Vacatio-VacatioUITests.release-production.xcconfig */,
+				DF54D1C58DCE854115685527 /* Pods-VacatioTests.debug-development.xcconfig */,
+				C42D1A24E4504344330FC353 /* Pods-VacatioTests.debug-staging.xcconfig */,
+				F921F6DC0F36EC894498837A /* Pods-VacatioTests.debug-production.xcconfig */,
+				D9E19B9E5C9705125074A9D6 /* Pods-VacatioTests.release-development.xcconfig */,
+				B29C711E5DFC24EDAA25F031 /* Pods-VacatioTests.release-staging.xcconfig */,
+				B1D59C5C0236C0DEC62FD55F /* Pods-VacatioTests.release-production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -156,11 +255,14 @@
 		DC5B01F826F25E24009F8199 /* Vacatio */ = {
 			isa = PBXGroup;
 			children = (
-				DC9FE76826FD7E6300C3C760 /* Helpers */,
 				DC75A63B26F894A3004207D5 /* Configs */,
+				DCA935542718CE900083B934 /* Models */,
+				DCA9355E2718E73E0083B934 /* ServicesAndManagers */,
 				DC5B022C26F25E3D009F8199 /* Views */,
 				DC5B022A26F25E2D009F8199 /* Controllers */,
+				DC9FE76826FD7E6300C3C760 /* Helpers */,
 				DC5B022926F25E28009F8199 /* Resources */,
+				DCA935432718BB370083B934 /* Development */,
 			);
 			path = Vacatio;
 			sourceTree = "<group>";
@@ -186,7 +288,12 @@
 		DC5B022926F25E28009F8199 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5BA1DE1D26FE508400F94695 /* Vacatio.entitlements */,
+				DCA935782718EBAD0083B934 /* VacatioRelease-Production.entitlements */,
+				DCA935772718EBA30083B934 /* VacatioRelease-Staging.entitlements */,
+				DCA935762718EB890083B934 /* VacatioRelease-Development.entitlements */,
+				DCA935752718EB690083B934 /* VacatioDebug-Production.entitlements */,
+				DCA935742718EB520083B934 /* VacatioDebug-Staging.entitlements */,
+				DCA935732718EB370083B934 /* VacatioDebug-Development.entitlements */,
 				DC5B01F926F25E24009F8199 /* AppDelegate.swift */,
 				DC5B01FB26F25E24009F8199 /* SceneDelegate.swift */,
 				DC5B020226F25E25009F8199 /* Assets.xcassets */,
@@ -197,6 +304,7 @@
 		DC5B022A26F25E2D009F8199 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				49E6B6382705791500950B24 /* ModelControllers */,
 				DC5B022B26F25E37009F8199 /* ViewControllers */,
 			);
 			path = Controllers;
@@ -206,10 +314,11 @@
 			isa = PBXGroup;
 			children = (
 				DC5B01FD26F25E24009F8199 /* LoginViewController.swift */,
-				DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */,
+				DC9FE76626FD6D0D00C3C760 /* VerificationViewController.swift */,
+				DCA9355C2718D52D0083B934 /* DisplayNameViewController.swift */,
 				DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */,
-				49D0850026FE304C00751C35 /* AccountViewController.swift */,
 				DC8033D726FE407A0055D431 /* TripsViewController.swift */,
+				49D0850026FE304C00751C35 /* AccountViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -238,13 +347,16 @@
 		DC75A63B26F894A3004207D5 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				5B8D373A26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist */,
 				DC5B020726F25E25009F8199 /* Info.plist */,
 				DC75A63C26F8DB2C004207D5 /* Base.xcconfig */,
-				DC75A63D26F8DB9D004207D5 /* Debug.xcconfig */,
+				DC75A63D26F8DB9D004207D5 /* Development.xcconfig */,
 				DC75A63E26F8DBA8004207D5 /* Staging.xcconfig */,
-				DC75A63F26F8DBAF004207D5 /* Release.xcconfig */,
+				DC75A63F26F8DBAF004207D5 /* Production.xcconfig */,
+				DCA9353F27189A1C0083B934 /* GoogleService-Info-Development.plist */,
+				5B8D373A26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist */,
+				DCA9352D2717B05A0083B934 /* GoogleService-Info.plist */,
 				DC8033D926FE41000055D431 /* Environment.swift */,
+				DCA935412718AF130083B934 /* FirebaseConfig.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -252,14 +364,66 @@
 		DC9FE76826FD7E6300C3C760 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				DC9FE76926FD7E7300C3C760 /* Constants.swift */,
+				DCA935572718CEDC0083B934 /* Extensions */,
+				DCA9354D2718C7AE0083B934 /* Errors */,
+				DC9FE76926FD7E7300C3C760 /* AppConstants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DCA935432718BB370083B934 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				DCA935442718BB790083B934 /* VerificationCode.swift */,
+				DCA935462718BB9E0083B934 /* VerificationCodeController.swift */,
+				DCA935482718BBE10083B934 /* NetworkError.swift */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		DCA9354D2718C7AE0083B934 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9354E2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift */,
+				DCA9356B2718E9380083B934 /* ConfigError.swift */,
+				DCA9356D2718E9540083B934 /* CloudKitError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		DCA935542718CE900083B934 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCA935552718CEA00083B934 /* User.swift */,
+				DCA935692718E9040083B934 /* RecordProtocol.swift */,
+				DCA935672718E8E70083B934 /* Config.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCA935572718CEDC0083B934 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCA935582718CEE50083B934 /* StringExtension.swift */,
+				DCA9356F2718E98B0083B934 /* NotificationNameExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCA9355E2718E73E0083B934 /* ServicesAndManagers */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9355F2718E7B90083B934 /* StorageProtocol.swift */,
+				DCA935612718E7FF0083B934 /* CloudKitService.swift */,
+				DCA935632718E8100083B934 /* RecordManager.swift */,
+			);
+			path = ServicesAndManagers;
 			sourceTree = "<group>";
 		};
 		F0578EDC4C872B7DF38AE808 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCA935712718EA380083B934 /* CloudKit.framework */,
 				3B77AE11E7043E4D50370282 /* Pods_Vacatio.framework */,
 				B404926DB39C5E6AF136534B /* Pods_Vacatio_VacatioUITests.framework */,
 				99218E4C5B49EBB6283016A6 /* Pods_VacatioTests.framework */,
@@ -334,6 +498,7 @@
 		DC5B01EE26F25E24009F8199 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
@@ -377,12 +542,14 @@
 			files = (
 				49D0850B26FE333000751C35 /* Trips.storyboard in Resources */,
 				49D0850826FE328A00751C35 /* Explore.storyboard in Resources */,
+				DCA9352E2717B05A0083B934 /* GoogleService-Info.plist in Resources */,
 				DC5B020626F25E25009F8199 /* LaunchScreen.storyboard in Resources */,
 				DC5B020326F25E25009F8199 /* Assets.xcassets in Resources */,
 				49D084FD26FE268C00751C35 /* Login.storyboard in Resources */,
 				DC5B020126F25E24009F8199 /* Main.storyboard in Resources */,
 				5B8D373B26FE4F5C00DD2C7C /* GoogleService-Info-Staging.plist in Resources */,
 				49D0850526FE326D00751C35 /* Account.storyboard in Resources */,
+				DCA9354027189A1C0083B934 /* GoogleService-Info-Development.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,15 +677,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC9FE76A26FD7E7300C3C760 /* Constants.swift in Sources */,
-				DC9FE76726FD6D0D00C3C760 /* SMSVerificationViewController.swift in Sources */,
+				DCA9356C2718E9380083B934 /* ConfigError.swift in Sources */,
+				DC9FE76A26FD7E7300C3C760 /* AppConstants.swift in Sources */,
+				DCA935492718BBE10083B934 /* NetworkError.swift in Sources */,
+				DCA935472718BB9E0083B934 /* VerificationCodeController.swift in Sources */,
+				49E6B63A2705793700950B24 /* AccountController.swift in Sources */,
+				DC9FE76726FD6D0D00C3C760 /* VerificationViewController.swift in Sources */,
+				DCA935452718BB790083B934 /* VerificationCode.swift in Sources */,
+				DCA935512718CDFF0083B934 /* UserController.swift in Sources */,
 				49D0850126FE304C00751C35 /* AccountViewController.swift in Sources */,
+				DCA9354B2718C7120083B934 /* AuthController.swift in Sources */,
+				DCA935642718E8100083B934 /* RecordManager.swift in Sources */,
+				DCA9356A2718E9040083B934 /* RecordProtocol.swift in Sources */,
+				DCA935702718E98B0083B934 /* NotificationNameExtension.swift in Sources */,
 				DC9FE76C26FD886200C3C760 /* ExploreViewController.swift in Sources */,
+				DCA935622718E7FF0083B934 /* CloudKitService.swift in Sources */,
+				DCA935682718E8E70083B934 /* Config.swift in Sources */,
+				DCA9356E2718E9540083B934 /* CloudKitError.swift in Sources */,
+				DCA935422718AF130083B934 /* FirebaseConfig.swift in Sources */,
 				DC8033DA26FE41000055D431 /* Environment.swift in Sources */,
+				DCA935592718CEE50083B934 /* StringExtension.swift in Sources */,
 				DC5B01FE26F25E24009F8199 /* LoginViewController.swift in Sources */,
 				DC8033D826FE407A0055D431 /* TripsViewController.swift in Sources */,
 				DC5B01FA26F25E24009F8199 /* AppDelegate.swift in Sources */,
+				DCA935602718E7B90083B934 /* StorageProtocol.swift in Sources */,
+				DCA935662718E8CD0083B934 /* ConfigController.swift in Sources */,
+				DCA9355D2718D52D0083B934 /* DisplayNameViewController.swift in Sources */,
 				DC5B01FC26F25E24009F8199 /* SceneDelegate.swift in Sources */,
+				DCA9354F2718C7E30083B934 /* FIRAuthErrorCodeExtension.swift in Sources */,
+				DCA935562718CEA00083B934 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,8 +760,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DC5B021E26F25E25009F8199 /* Debug */ = {
+		DC5B021E26F25E25009F8199 /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC75A63D26F8DB9D004207D5 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -610,6 +798,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -624,6 +813,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -632,10 +822,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug-Development";
 		};
-		DC5B021F26F25E25009F8199 /* Release */ = {
+		DC5B021F26F25E25009F8199 /* Release-Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC75A63D26F8DB9D004207D5 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -671,6 +862,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -679,6 +871,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -687,15 +880,15 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release-Development";
 		};
-		DC5B022126F25E25009F8199 /* Debug */ = {
+		DC5B022126F25E25009F8199 /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA4F6F8451DA8186A52A2B32 /* Pods-Vacatio.debug.xcconfig */;
+			baseConfigurationReference = 482F7F300A42083230886366 /* Pods-Vacatio.debug-development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Vacatio/Resources/Vacatio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Vacatio/Resources/VacatioDebug-Development.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KPL4DJ569T;
 				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
@@ -703,20 +896,19 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Debug-Development";
 		};
-		DC5B022226F25E25009F8199 /* Release */ = {
+		DC5B022226F25E25009F8199 /* Release-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9FB495D7F91566AB17D471A /* Pods-Vacatio.release.xcconfig */;
+			baseConfigurationReference = DF49773F12BAD0DAE8B23820 /* Pods-Vacatio.release-development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Vacatio/Resources/Vacatio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Vacatio/Resources/VacatioRelease-Development.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KPL4DJ569T;
 				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
@@ -724,16 +916,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.Vacatio.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = "Release-Development";
 		};
-		DC5B022426F25E25009F8199 /* Debug */ = {
+		DC5B022426F25E25009F8199 /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 780311DAA17B5AD56143728F /* Pods-VacatioTests.debug.xcconfig */;
+			baseConfigurationReference = DF54D1C58DCE854115685527 /* Pods-VacatioTests.debug-development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -752,11 +944,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacatio.app/Vacatio";
 			};
-			name = Debug;
+			name = "Debug-Development";
 		};
-		DC5B022526F25E25009F8199 /* Release */ = {
+		DC5B022526F25E25009F8199 /* Release-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79CF40B372659E1385A0AA60 /* Pods-VacatioTests.release.xcconfig */;
+			baseConfigurationReference = D9E19B9E5C9705125074A9D6 /* Pods-VacatioTests.release-development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -775,11 +967,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacatio.app/Vacatio";
 			};
-			name = Release;
+			name = "Release-Development";
 		};
-		DC5B022726F25E25009F8199 /* Debug */ = {
+		DC5B022726F25E25009F8199 /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2FABC4001C2C0982E77C7A4 /* Pods-Vacatio-VacatioUITests.debug.xcconfig */;
+			baseConfigurationReference = 8BC7D64828F47376E7B6C56D /* Pods-Vacatio-VacatioUITests.debug-development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -796,11 +988,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Vacatio;
 			};
-			name = Debug;
+			name = "Debug-Development";
 		};
-		DC5B022826F25E25009F8199 /* Release */ = {
+		DC5B022826F25E25009F8199 /* Release-Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0374B8BB6E8A21F9E7D3BB51 /* Pods-Vacatio-VacatioUITests.release.xcconfig */;
+			baseConfigurationReference = 4633F254B66BB4A3ED99F4CF /* Pods-Vacatio-VacatioUITests.release-development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -817,7 +1009,511 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Vacatio;
 			};
-			name = Release;
+			name = "Release-Development";
+		};
+		DCA9352F2717B22F0083B934 /* Debug-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC75A63E26F8DBA8004207D5 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-Staging";
+		};
+		DCA935302717B22F0083B934 /* Debug-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A03A8CDE60FF05686FFD3B /* Pods-Vacatio.debug-staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vacatio/Resources/VacatioDebug-Staging.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-Staging";
+		};
+		DCA935312717B22F0083B934 /* Debug-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42D1A24E4504344330FC353 /* Pods-VacatioTests.debug-staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacatio.app/Vacatio";
+			};
+			name = "Debug-Staging";
+		};
+		DCA935322717B22F0083B934 /* Debug-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD420B9FDA77E27C034D2E9C /* Pods-Vacatio-VacatioUITests.debug-staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vacatio;
+			};
+			name = "Debug-Staging";
+		};
+		DCA935332717B23F0083B934 /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC75A63F26F8DBAF004207D5 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-Production";
+		};
+		DCA935342717B23F0083B934 /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4779184B3D61756DB450D985 /* Pods-Vacatio.debug-production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vacatio/Resources/VacatioDebug-Production.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-Production";
+		};
+		DCA935352717B23F0083B934 /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F921F6DC0F36EC894498837A /* Pods-VacatioTests.debug-production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacatio.app/Vacatio";
+			};
+			name = "Debug-Production";
+		};
+		DCA935362717B23F0083B934 /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5397E43609A94A3F07385C /* Pods-Vacatio-VacatioUITests.debug-production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vacatio;
+			};
+			name = "Debug-Production";
+		};
+		DCA935372717B25B0083B934 /* Release-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC75A63E26F8DBA8004207D5 /* Staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-Staging";
+		};
+		DCA935382717B25B0083B934 /* Release-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 807EE7002EDA806E544928E5 /* Pods-Vacatio.release-staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vacatio/Resources/VacatioRelease-Staging.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-Staging";
+		};
+		DCA935392717B25B0083B934 /* Release-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B29C711E5DFC24EDAA25F031 /* Pods-VacatioTests.release-staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacatio.app/Vacatio";
+			};
+			name = "Release-Staging";
+		};
+		DCA9353A2717B25B0083B934 /* Release-Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB3FE6628AE0CFDDF5590CE7 /* Pods-Vacatio-VacatioUITests.release-staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vacatio;
+			};
+			name = "Release-Staging";
+		};
+		DCA9353B2717B2650083B934 /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC75A63F26F8DBAF004207D5 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-Production";
+		};
+		DCA9353C2717B2650083B934 /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29267FB2D34EFA859A9AEC01 /* Pods-Vacatio.release-production.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Vacatio/Resources/VacatioRelease-Production.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = Vacatio/Configs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webdavis.Vacatio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-Production";
+		};
+		DCA9353D2717B2650083B934 /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D59C5C0236C0DEC62FD55F /* Pods-VacatioTests.release-production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vacatio.app/Vacatio";
+			};
+			name = "Release-Production";
+		};
+		DCA9353E2717B2650083B934 /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70BB74A2AFDAC02AAC4AC04F /* Pods-Vacatio-VacatioUITests.release-production.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KPL4DJ569T;
+				INFOPLIST_FILE = VacatioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.webdavis.VacatioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vacatio;
+			};
+			name = "Release-Production";
 		};
 /* End XCBuildConfiguration section */
 
@@ -825,38 +1521,54 @@
 		DC5B01F126F25E24009F8199 /* Build configuration list for PBXProject "Vacatio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC5B021E26F25E25009F8199 /* Debug */,
-				DC5B021F26F25E25009F8199 /* Release */,
+				DC5B021E26F25E25009F8199 /* Debug-Development */,
+				DCA9352F2717B22F0083B934 /* Debug-Staging */,
+				DCA935332717B23F0083B934 /* Debug-Production */,
+				DC5B021F26F25E25009F8199 /* Release-Development */,
+				DCA935372717B25B0083B934 /* Release-Staging */,
+				DCA9353B2717B2650083B934 /* Release-Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-Development";
 		};
 		DC5B022026F25E25009F8199 /* Build configuration list for PBXNativeTarget "Vacatio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC5B022126F25E25009F8199 /* Debug */,
-				DC5B022226F25E25009F8199 /* Release */,
+				DC5B022126F25E25009F8199 /* Debug-Development */,
+				DCA935302717B22F0083B934 /* Debug-Staging */,
+				DCA935342717B23F0083B934 /* Debug-Production */,
+				DC5B022226F25E25009F8199 /* Release-Development */,
+				DCA935382717B25B0083B934 /* Release-Staging */,
+				DCA9353C2717B2650083B934 /* Release-Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-Development";
 		};
 		DC5B022326F25E25009F8199 /* Build configuration list for PBXNativeTarget "VacatioTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC5B022426F25E25009F8199 /* Debug */,
-				DC5B022526F25E25009F8199 /* Release */,
+				DC5B022426F25E25009F8199 /* Debug-Development */,
+				DCA935312717B22F0083B934 /* Debug-Staging */,
+				DCA935352717B23F0083B934 /* Debug-Production */,
+				DC5B022526F25E25009F8199 /* Release-Development */,
+				DCA935392717B25B0083B934 /* Release-Staging */,
+				DCA9353D2717B2650083B934 /* Release-Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-Development";
 		};
 		DC5B022626F25E25009F8199 /* Build configuration list for PBXNativeTarget "VacatioUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC5B022726F25E25009F8199 /* Debug */,
-				DC5B022826F25E25009F8199 /* Release */,
+				DC5B022726F25E25009F8199 /* Debug-Development */,
+				DCA935322717B22F0083B934 /* Debug-Staging */,
+				DCA935362717B23F0083B934 /* Debug-Production */,
+				DC5B022826F25E25009F8199 /* Release-Development */,
+				DCA9353A2717B25B0083B934 /* Release-Staging */,
+				DCA9353E2717B2650083B934 /* Release-Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-Development";
 		};
 /* End XCConfigurationList section */
 	};

@@ -18,11 +18,11 @@ less to complete.
     3. As the developers, we want a mock-up of our account sign-up UI, so that we understand
        what the heck our next steps are.
   
-    4. As the developers, we want to define our application Account/User Models, so that we
-       have some idea of how to store and structure our user information.
-  
-    5. As the developers, we want to setup a database, so that we can store Account/User
+    4. As the developers, we want to setup a database, so that we can store Account/User
        information separately from our application.
+ 
+    5. As the developers, we want to sketch the account creation flow, so that
+       we understand how the user will create an account before we code this out.
   
     6. As a user, I want to be able to easily create my account using my phone number, so that
        I can get into Vacatio.
