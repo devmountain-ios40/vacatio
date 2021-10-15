@@ -49,7 +49,6 @@ public enum Environment {
     }
     
     static let cloudKitContainer: String = {
-        print("CLOUDKIT_CONTAINER: \(getKey(Keys.Plist.googleServiceInfo))")
         return getKey(Keys.Plist.cloudKitContainer)
     }()
     

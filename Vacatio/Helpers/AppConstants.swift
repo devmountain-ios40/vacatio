@@ -12,8 +12,9 @@ public enum AppConstants {
     // MARK: - Misc
     /// The UserDefaults key used to store the Firebase phone login verificationID.
     static let authVerificationID: String = "AuthVerificationID"
-    
+    static let configSubscriptionID : String =  "Config-subscriptionID"
     static let isNewUser: String = "IsNewUser"
+    
     /**
      # Summary
      The UserDefaults key used to store the state of Vacatio profile creation.
@@ -22,7 +23,7 @@ public enum AppConstants {
      If the stored value is false, then profile creation is complete. If it's true then it assumes account creation is not complete and
      the user should be prompted the next time they open the app.
      */
-    static let isProfileSetupComplete: String = "IsNewUser"
+    static let isProfileSetupComplete: String = "ProfileSetupComplete"
     static let userIsLoggedIn: String = "UserIsLoggedIn"
     
     
