@@ -17,15 +17,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        let storyboard = UIStoryboard(name: AppConstants.mainStoryboardFileName, bundle: Bundle.main)
+        // Added for login.
+        let storyboard = UIStoryboard(name: Constants.mainStoryboardFileName, bundle: Bundle.main)
         
-        if AuthController.userIsLoggedIn() {
-            let mainTabBarController = storyboard
-                .instantiateViewController(withIdentifier: AppConstants.mainTabBarControllerID)
+        if let _ = UserDefaults.standard.string(forKey: Constants.SMSVerificationID) {
+            let mainTabBarController = storyboard.instantiateViewController(identifier: Constants.mainTabBarControllerID)
             window?.rootViewController = mainTabBarController
         } else {
-            let loginNavigationController = storyboard
-                .instantiateViewController(withIdentifier: AppConstants.loginNavigationControllerID)
+            let loginNavigationController = storyboard.instantiateViewController(identifier: Constants.loginNavigationControllerID)
             window?.rootViewController = loginNavigationController
         }
     }

@@ -9,16 +9,18 @@ import UIKit
 import Firebase
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate, ConfigControllerInjector {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        UIApplication.shared.registerForRemoteNotifications()
-        
-        self.configController()
-        FirebaseConfig.setup()
-        
+        // MARK: - Configure GoogleService-Info.plist
+        let googleServiceFilePath = Bundle.main.path(forResource: Environment.googleServiceInfo, ofType: "plist")
+        guard let firebaseOptions = FirebaseOptions.init(contentsOfFile: googleServiceFilePath!) else {
+            print("Error: couldn't load config: \(Environment.googleServiceInfo)")
+            return false
+        }
+        FirebaseApp.configure(options: firebaseOptions)
         return true
     }
 
@@ -33,19 +35,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ConfigControllerInjector 
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-    
-    func application(_ application: UIApplication,
-                     didReceiveRemoteNotification userInfo: [AnyHashable : Any],
-                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        guard let ckNotification = CKNotification(fromRemoteNotificationDictionary: userInfo) else {
-            return completionHandler(.noData)
-        }
-        
-        if ckNotification.subscriptionID == AppConstants.configSubscriptionID {
-            notificationCenter.post(name: .configUpdated, object: nil)
-        }
-            
-        completionHandler(.newData)
     }
 }
