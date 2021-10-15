@@ -1,6 +1,3 @@
-# vi: set filetype=ruby:
-
-# The global platform for this project.
 platform :ios, '14.5'
 
 target 'Vacatio' do
