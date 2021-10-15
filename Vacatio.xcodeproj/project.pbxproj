@@ -8,10 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3DF69C244518CE40CA63ABB0 /* Pods_Vacatio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B77AE11E7043E4D50370282 /* Pods_Vacatio.framework */; };
+		4968C6912718EB3000613385 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4968C6902718EB3000613385 /* Extensions.swift */; };
 		497C7F5927065BB7008617A3 /* TomTomAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F5827065BB7008617A3 /* TomTomAPI.swift */; };
 		497C7F5B27065F35008617A3 /* APITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F5A27065F35008617A3 /* APITest.swift */; };
 		497C7F5F270660EA008617A3 /* TomTomAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F5E270660EA008617A3 /* TomTomAPIController.swift */; };
 		497C7F6127066E59008617A3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F6027066E59008617A3 /* NetworkError.swift */; };
+		497C7F86270B9C43008617A3 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F85270B9C43008617A3 /* TripTableViewCell.swift */; };
+		497C7F88270BAB8C008617A3 /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F87270BAB8C008617A3 /* TripDetailViewController.swift */; };
+		497C7F8A270BBFE4008617A3 /* ExploreResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F89270BBFE4008617A3 /* ExploreResultViewController.swift */; };
+		497C7F8C270BC014008617A3 /* ExploreResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F8B270BC014008617A3 /* ExploreResultTableViewCell.swift */; };
+		497C7F9D270CCEC3008617A3 /* FirstContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F9C270CCEC3008617A3 /* FirstContainerViewController.swift */; };
+		497C7F9F270CCED1008617A3 /* SecondContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7F9E270CCED1008617A3 /* SecondContainerViewController.swift */; };
+		497C7FA1270CCEE3008617A3 /* ThirdContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7FA0270CCEE3008617A3 /* ThirdContainerViewController.swift */; };
+		497C7FA3270CCF54008617A3 /* FirstContainerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7FA2270CCF54008617A3 /* FirstContainerTableViewCell.swift */; };
+		497C7FA5270CE1F3008617A3 /* AddNewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7FA4270CE1F2008617A3 /* AddNewTripViewController.swift */; };
+		497C7FA9270E19FC008617A3 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7FA8270E19FB008617A3 /* Trip.swift */; };
+		497C7FAB270E1B1E008617A3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7FAA270E1B1E008617A3 /* Item.swift */; };
+		497C7FAD270E1D6E008617A3 /* TripModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7FAC270E1D6E008617A3 /* TripModelController.swift */; };
+		497C7FAF270E1D76008617A3 /* ItemModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C7FAE270E1D76008617A3 /* ItemModelController.swift */; };
 		49D084FD26FE268C00751C35 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D084FC26FE268C00751C35 /* Login.storyboard */; };
 		49D0850126FE304C00751C35 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0850026FE304C00751C35 /* AccountViewController.swift */; };
 		49D0850526FE326D00751C35 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D0850426FE326D00751C35 /* Account.storyboard */; };
@@ -28,7 +42,7 @@
 		DC5B020626F25E25009F8199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5B020426F25E25009F8199 /* LaunchScreen.storyboard */; };
 		DC5B021126F25E25009F8199 /* VacatioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B021026F25E25009F8199 /* VacatioTests.swift */; };
 		DC5B021C26F25E25009F8199 /* VacatioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5B021B26F25E25009F8199 /* VacatioUITests.swift */; };
-		DC8033D826FE407A0055D431 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8033D726FE407A0055D431 /* TripsViewController.swift */; };
+		DC8033D826FE407A0055D431 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8033D726FE407A0055D431 /* TripViewController.swift */; };
 		DC8033DA26FE41000055D431 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8033D926FE41000055D431 /* Environment.swift */; };
 		DC9FE76726FD6D0D00C3C760 /* SMSVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */; };
 		DC9FE76A26FD7E7300C3C760 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9FE76926FD7E7300C3C760 /* Constants.swift */; };
@@ -55,10 +69,24 @@
 /* Begin PBXFileReference section */
 		0374B8BB6E8A21F9E7D3BB51 /* Pods-Vacatio-VacatioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vacatio-VacatioUITests.release.xcconfig"; path = "Target Support Files/Pods-Vacatio-VacatioUITests/Pods-Vacatio-VacatioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3B77AE11E7043E4D50370282 /* Pods_Vacatio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vacatio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4968C6902718EB3000613385 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		497C7F5827065BB7008617A3 /* TomTomAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomTomAPI.swift; sourceTree = "<group>"; };
 		497C7F5A27065F35008617A3 /* APITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITest.swift; sourceTree = "<group>"; };
 		497C7F5E270660EA008617A3 /* TomTomAPIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomTomAPIController.swift; sourceTree = "<group>"; };
 		497C7F6027066E59008617A3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		497C7F85270B9C43008617A3 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		497C7F87270BAB8C008617A3 /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
+		497C7F89270BBFE4008617A3 /* ExploreResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreResultViewController.swift; sourceTree = "<group>"; };
+		497C7F8B270BC014008617A3 /* ExploreResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreResultTableViewCell.swift; sourceTree = "<group>"; };
+		497C7F9C270CCEC3008617A3 /* FirstContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContainerViewController.swift; sourceTree = "<group>"; };
+		497C7F9E270CCED1008617A3 /* SecondContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContainerViewController.swift; sourceTree = "<group>"; };
+		497C7FA0270CCEE3008617A3 /* ThirdContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdContainerViewController.swift; sourceTree = "<group>"; };
+		497C7FA2270CCF54008617A3 /* FirstContainerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContainerTableViewCell.swift; sourceTree = "<group>"; };
+		497C7FA4270CE1F2008617A3 /* AddNewTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTripViewController.swift; sourceTree = "<group>"; };
+		497C7FA8270E19FB008617A3 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		497C7FAA270E1B1E008617A3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		497C7FAC270E1D6E008617A3 /* TripModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModelController.swift; sourceTree = "<group>"; };
+		497C7FAE270E1D76008617A3 /* ItemModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModelController.swift; sourceTree = "<group>"; };
 		49D084FC26FE268C00751C35 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		49D0850026FE304C00751C35 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		49D0850426FE326D00751C35 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
@@ -91,7 +119,7 @@
 		DC75A63D26F8DB9D004207D5 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		DC75A63E26F8DBA8004207D5 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		DC75A63F26F8DBAF004207D5 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		DC8033D726FE407A0055D431 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		DC8033D726FE407A0055D431 /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		DC8033D926FE41000055D431 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVerificationViewController.swift; sourceTree = "<group>"; };
 		DC9FE76926FD7E7300C3C760 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -131,8 +159,30 @@
 			children = (
 				497C7F5827065BB7008617A3 /* TomTomAPI.swift */,
 				497C7F5A27065F35008617A3 /* APITest.swift */,
+				497C7FA8270E19FB008617A3 /* Trip.swift */,
+				497C7FAA270E1B1E008617A3 /* Item.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		497C7F84270B9C2C008617A3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				497C7F85270B9C43008617A3 /* TripTableViewCell.swift */,
+				497C7F8B270BC014008617A3 /* ExploreResultTableViewCell.swift */,
+				497C7FA2270CCF54008617A3 /* FirstContainerTableViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		497C7F95270CCE13008617A3 /* ContainerViews */ = {
+			isa = PBXGroup;
+			children = (
+				497C7F9C270CCEC3008617A3 /* FirstContainerViewController.swift */,
+				497C7F9E270CCED1008617A3 /* SecondContainerViewController.swift */,
+				497C7FA0270CCEE3008617A3 /* ThirdContainerViewController.swift */,
+			);
+			path = ContainerViews;
 			sourceTree = "<group>";
 		};
 		513444550B258FF62976027E /* Pods */ = {
@@ -215,8 +265,13 @@
 		DC5B022A26F25E2D009F8199 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				497C7F95270CCE13008617A3 /* ContainerViews */,
 				DC5B022B26F25E37009F8199 /* ViewControllers */,
 				497C7F5E270660EA008617A3 /* TomTomAPIController.swift */,
+				497C7F87270BAB8C008617A3 /* TripDetailViewController.swift */,
+				497C7FA4270CE1F2008617A3 /* AddNewTripViewController.swift */,
+				497C7FAC270E1D6E008617A3 /* TripModelController.swift */,
+				497C7FAE270E1D76008617A3 /* ItemModelController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,8 +282,9 @@
 				DC5B01FD26F25E24009F8199 /* LoginViewController.swift */,
 				DC9FE76626FD6D0D00C3C760 /* SMSVerificationViewController.swift */,
 				DC9FE76B26FD886200C3C760 /* ExploreViewController.swift */,
+				497C7F89270BBFE4008617A3 /* ExploreResultViewController.swift */,
 				49D0850026FE304C00751C35 /* AccountViewController.swift */,
-				DC8033D726FE407A0055D431 /* TripsViewController.swift */,
+				DC8033D726FE407A0055D431 /* TripViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -236,6 +292,7 @@
 		DC5B022C26F25E3D009F8199 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				497C7F84270B9C2C008617A3 /* CustomViews */,
 				DC5B022D26F25E41009F8199 /* Storyboards */,
 			);
 			path = Views;
@@ -273,6 +330,7 @@
 			children = (
 				DC9FE76926FD7E7300C3C760 /* Constants.swift */,
 				497C7F6027066E59008617A3 /* NetworkError.swift */,
+				4968C6902718EB3000613385 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -530,16 +588,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497C7F88270BAB8C008617A3 /* TripDetailViewController.swift in Sources */,
+				4968C6912718EB3000613385 /* Extensions.swift in Sources */,
 				DC9FE76A26FD7E7300C3C760 /* Constants.swift in Sources */,
+				497C7FA1270CCEE3008617A3 /* ThirdContainerViewController.swift in Sources */,
+				497C7F9F270CCED1008617A3 /* SecondContainerViewController.swift in Sources */,
+				497C7FA5270CE1F3008617A3 /* AddNewTripViewController.swift in Sources */,
+				497C7FAB270E1B1E008617A3 /* Item.swift in Sources */,
 				DC9FE76726FD6D0D00C3C760 /* SMSVerificationViewController.swift in Sources */,
 				497C7F5F270660EA008617A3 /* TomTomAPIController.swift in Sources */,
+				497C7FA3270CCF54008617A3 /* FirstContainerTableViewCell.swift in Sources */,
 				497C7F5B27065F35008617A3 /* APITest.swift in Sources */,
 				497C7F5927065BB7008617A3 /* TomTomAPI.swift in Sources */,
+				497C7FAF270E1D76008617A3 /* ItemModelController.swift in Sources */,
 				49D0850126FE304C00751C35 /* AccountViewController.swift in Sources */,
+				497C7FA9270E19FC008617A3 /* Trip.swift in Sources */,
+				497C7FAD270E1D6E008617A3 /* TripModelController.swift in Sources */,
+				497C7F9D270CCEC3008617A3 /* FirstContainerViewController.swift in Sources */,
 				DC9FE76C26FD886200C3C760 /* ExploreViewController.swift in Sources */,
 				DC8033DA26FE41000055D431 /* Environment.swift in Sources */,
+				497C7F8C270BC014008617A3 /* ExploreResultTableViewCell.swift in Sources */,
+				497C7F86270B9C43008617A3 /* TripTableViewCell.swift in Sources */,
 				DC5B01FE26F25E24009F8199 /* LoginViewController.swift in Sources */,
-				DC8033D826FE407A0055D431 /* TripsViewController.swift in Sources */,
+				497C7F8A270BBFE4008617A3 /* ExploreResultViewController.swift in Sources */,
+				DC8033D826FE407A0055D431 /* TripViewController.swift in Sources */,
 				497C7F6127066E59008617A3 /* NetworkError.swift in Sources */,
 				DC5B01FA26F25E24009F8199 /* AppDelegate.swift in Sources */,
 				DC5B01FC26F25E24009F8199 /* SceneDelegate.swift in Sources */,

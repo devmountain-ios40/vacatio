@@ -18,14 +18,13 @@ struct SearchResult: Codable  {
     let type: String
     let id: String
     let score, dist: Double
-    let info: String //$
+    let info: String //Do we need this?
     let poi: Poi
     let address: Address
     let position: Position
     let entryPoints: [EntryPoint]
     let dataSources: DataSources?
 }
-
 
 // MARK: - Position
 struct Position: Codable {
@@ -46,15 +45,14 @@ struct Poi: Codable {
 struct Address: Codable  {
     let postalCode: String?
     let countryCodeISO3: String?
-    let freeformAddress: String?
+    let freeformAddress: String
     let localName: String?
 }
 
 // MARK: - DataSources
-struct DataSources: Codable  {
-    let poiDetails: [PoiDetail]
+struct DataSources: Codable {
+    let poiDetails: [PoiDetail]?
 }
-
 
 // MARK: - PoiDetail
 struct PoiDetail: Codable  {
@@ -66,7 +64,6 @@ struct EntryPoint: Codable  {
     let type: String
     let position: Position
 }
-
 
 // MARK: - Brand
 struct Brand: Codable  {
